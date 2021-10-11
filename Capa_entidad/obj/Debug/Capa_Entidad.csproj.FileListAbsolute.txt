@@ -1,0 +1,5 @@
+C:\Users\Erica\Source\Repos\Fabrizzi_Nuevo\Capa_entidad\bin\Debug\Capa_entidad.dll
+C:\Users\Erica\Source\Repos\Fabrizzi_Nuevo\Capa_entidad\bin\Debug\Capa_entidad.pdb
+C:\Users\Erica\Source\Repos\Fabrizzi_Nuevo\Capa_entidad\obj\Debug\Capa_Entidad.csproj.CoreCompileInputs.cache
+C:\Users\Erica\Source\Repos\Fabrizzi_Nuevo\Capa_entidad\obj\Debug\Capa_entidad.dll
+C:\Users\Erica\Source\Repos\Fabrizzi_Nuevo\Capa_entidad\obj\Debug\Capa_entidad.pdb
