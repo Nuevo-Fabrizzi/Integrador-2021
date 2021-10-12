@@ -51,6 +51,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CambioProductosClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambioProductosClientes.Designer.cs">
+      <DependentUpon>CambioProductosClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevolucionProductosDeposito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevolucionProductosDeposito.Designer.cs">
+      <DependentUpon>DevolucionProductosDeposito.cs</DependentUpon>
+    </Compile>
     <Compile Include="Direcciones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -224,6 +236,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Usuarios_Alta.resx</DependentUpon>
     </Compile>
+    <Compile Include="Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas.Designer.cs">
+      <DependentUpon>Ventas.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CambioProductosClientes.resx">
+      <DependentUpon>CambioProductosClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevolucionProductosDeposito.resx">
+      <DependentUpon>DevolucionProductosDeposito.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Direcciones.resx">
       <DependentUpon>Direcciones.cs</DependentUpon>
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -310,6 +334,9 @@
       <DependentUpon>Usuarios_Alta.cs</DependentUpon>
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Usuarios_Alta1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas.resx">
+      <DependentUpon>Ventas.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

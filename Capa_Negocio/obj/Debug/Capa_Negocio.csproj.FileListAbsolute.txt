@@ -9,3 +9,14 @@ C:\Users\Erica\Source\Repos\Fabrizzi_Nuevo\Capa_Negocio\bin\Debug\Capa_entidad.d
 C:\Users\Erica\Source\Repos\Fabrizzi_Nuevo\Capa_Negocio\bin\Debug\CapaDato.pdb
 C:\Users\Erica\Source\Repos\Fabrizzi_Nuevo\Capa_Negocio\bin\Debug\Capa_entidad.pdb
 C:\Users\Erica\Source\Repos\Fabrizzi_Nuevo\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CopyComplete
+C:\Users\Manu\Desktop\Proyecto final final\Integrador-2021\Capa_Negocio\bin\Debug\Capa_Negocio.dll
+C:\Users\Manu\Desktop\Proyecto final final\Integrador-2021\Capa_Negocio\bin\Debug\Capa_Negocio.pdb
+C:\Users\Manu\Desktop\Proyecto final final\Integrador-2021\Capa_Negocio\bin\Debug\CapaDato.dll
+C:\Users\Manu\Desktop\Proyecto final final\Integrador-2021\Capa_Negocio\bin\Debug\Capa_entidad.dll
+C:\Users\Manu\Desktop\Proyecto final final\Integrador-2021\Capa_Negocio\bin\Debug\CapaDato.pdb
+C:\Users\Manu\Desktop\Proyecto final final\Integrador-2021\Capa_Negocio\bin\Debug\Capa_entidad.pdb
+C:\Users\Manu\Desktop\Proyecto final final\Integrador-2021\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.AssemblyReference.cache
+C:\Users\Manu\Desktop\Proyecto final final\Integrador-2021\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Manu\Desktop\Proyecto final final\Integrador-2021\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CopyComplete
+C:\Users\Manu\Desktop\Proyecto final final\Integrador-2021\Capa_Negocio\obj\Debug\Capa_Negocio.dll
+C:\Users\Manu\Desktop\Proyecto final final\Integrador-2021\Capa_Negocio\obj\Debug\Capa_Negocio.pdb
