@@ -116,15 +116,11 @@ namespace Presentacion
                             tBox_Desc.Text = "";
 
                         }
-
-
                     }
                     else
                     {
                         MessageBox.Show("Debe seleccionar un tipo de artículo.", "Tipo artículo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
-
-
                 }
                 else
                 {
@@ -139,15 +135,57 @@ namespace Presentacion
 
         private void cBox_Tipo_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cBox_Tipo.SelectedIndex == 2)
+            int tipo = cBox_Tipo.SelectedIndex;
+            
+            switch (tipo)
             {
-                cbox_Subtipo.Items.Add("Centimetro plástico");
-                cbox_Subtipo.Items.Add("Escuadra");
-                cbox_Subtipo.Items.Add("Pinza prensatela fija");
-                cbox_Subtipo.Items.Add("Alfileres");
-                cbox_Subtipo.Items.Add("Tijera");
+                case 1:
+                    cbox_Subtipo.Items.Add("Seleccione");
+                    cbox_Subtipo.Items.Add("Abrojo");
+                    cbox_Subtipo.Items.Add("Cierres");
+                    cbox_Subtipo.Items.Add("Cierres en cadena");
+                    cbox_Subtipo.Items.Add("Cierres finos");
+                    cbox_Subtipo.Items.Add("Cinta al bies");
+                    cbox_Subtipo.Items.Add("Cinta fruncidoras");
+                    cbox_Subtipo.Items.Add("Cinta gross");
+                    cbox_Subtipo.Items.Add("Cono de hilo");
+                    cbox_Subtipo.Items.Add("Cordon");
+                    cbox_Subtipo.Items.Add("Elástico liso");
+                    cbox_Subtipo.Items.Add("Elástico redondo");
+                    cbox_Subtipo.Items.Add("Hombreras");
+                    cbox_Subtipo.Items.Add("Hormillas");
+                    cbox_Subtipo.Items.Add("Matriz de broche");
+                    cbox_Subtipo.Items.Add("Telas");
+                    cbox_Subtipo.Items.Add("Tizas de modista");
+                    cbox_Subtipo.SelectedIndex = 0;
+                    break;
+                case 2:
+                    cbox_Subtipo.Items.Add("Seleccione");
+                    cbox_Subtipo.Items.Add("Alfileres");
+                    cbox_Subtipo.Items.Add("Centimetro plástico");
+                    cbox_Subtipo.Items.Add("Escuadra");
+                    cbox_Subtipo.Items.Add("Pinza prensatela fija");
+                    cbox_Subtipo.Items.Add("Tijera");
+                    cbox_Subtipo.SelectedIndex = 0;
+                    break;
+                case 3:
+                    cbox_Subtipo.Items.Add("Seleccione");
+                    cbox_Subtipo.Items.Add("Agujas de máquina");
+                    cbox_Subtipo.Items.Add("Base roluet Zic-Zac");
+                    cbox_Subtipo.Items.Add("Bobinas");
+                    cbox_Subtipo.Items.Add("Carreteles");
+                    cbox_Subtipo.Items.Add("Correa dentada");
+                    cbox_Subtipo.Items.Add("Correa de cuero");
+                    cbox_Subtipo.Items.Add("Dedales");
+                    cbox_Subtipo.Items.Add("Enhebrador con lupa");
+                    cbox_Subtipo.Items.Add("Guías");
+                    cbox_Subtipo.Items.Add("Porta cono");
+                    cbox_Subtipo.Items.Add("Porta etiquetas");
+                    cbox_Subtipo.SelectedIndex = 0;
+                    break; 
 
             }
+
         }
     }
 }
