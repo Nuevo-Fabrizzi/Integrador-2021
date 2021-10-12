@@ -86,7 +86,7 @@ namespace Presentacion
                 cBox_Proveedores.ValueMember = "cuit";
             }
 
-           
+
         }
 
         private void CargarNuevoArt_Click(object sender, EventArgs e)
@@ -99,7 +99,7 @@ namespace Presentacion
             matPriNew.mpri_CodArt = tBox_CodArt.Text;
             matPriNew.mpri_Descripcion = tBox_Desc.Text;
             matPriNew.mpri_CUITprov = cBox_Proveedores.SelectedValue.ToString();
-
+            matPriNew.mpri_subtipo = cbox_Subtipo.SelectedItem.ToString();
 
             if ((resp == DialogResult.Yes))
             {
@@ -131,17 +131,23 @@ namespace Presentacion
                     MessageBox.Show("Debe ingresar el código de artículo que figura en el remito.", "Código artículo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
-           
 
 
-                
-          }
+
+
+        }
 
         private void cBox_Tipo_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cBox_Tipo.SelectedItem.ToString() == "De Corte")
+            if (cBox_Tipo.SelectedIndex == 2)
             {
-                cbox_Subtipo
+                cbox_Subtipo.Items.Add("Centimetro plástico");
+                cbox_Subtipo.Items.Add("Escuadra");
+                cbox_Subtipo.Items.Add("Pinza prensatela fija");
+                cbox_Subtipo.Items.Add("Alfileres");
+                cbox_Subtipo.Items.Add("Tijera");
+
             }
+        }
     }
 }
