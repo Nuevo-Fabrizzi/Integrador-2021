@@ -224,6 +224,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Usuarios_Alta.resx</DependentUpon>
     </Compile>
+    <Compile Include="Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas.designer.cs">
+      <DependentUpon>Ventas.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Direcciones.resx">
       <DependentUpon>Direcciones.cs</DependentUpon>
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -310,6 +316,9 @@
       <DependentUpon>Usuarios_Alta.cs</DependentUpon>
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Usuarios_Alta1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas.resx">
+      <DependentUpon>Ventas.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
