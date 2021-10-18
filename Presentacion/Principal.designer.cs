@@ -105,6 +105,7 @@
             this.lbl_productos.Size = new System.Drawing.Size(131, 29);
             this.lbl_productos.TabIndex = 6;
             this.lbl_productos.Text = "Productos";
+            this.lbl_productos.Click += new System.EventHandler(this.lbl_productos_Click);
             // 
             // lbl_Pedidos
             // 

@@ -61,6 +61,12 @@ namespace Presentacion
             MateriasPrimasListado MatPrim = new MateriasPrimasListado();
             MatPrim.Show();
         }
+
+        private void lbl_productos_Click(object sender, EventArgs e)
+        {
+            ProductosListado ProdList = new ProductosListado();
+            ProdList.Show();
+        }
     }
 }
 

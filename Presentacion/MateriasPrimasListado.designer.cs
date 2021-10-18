@@ -56,7 +56,7 @@ namespace Presentacion
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(844, 86);
+            this.panel1.Size = new System.Drawing.Size(860, 86);
             this.panel1.TabIndex = 71;
             // 
             // lbl_TitProvList
@@ -119,7 +119,7 @@ namespace Presentacion
             this.dgv_ListMateriaPrima.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_ListMateriaPrima.Size = new System.Drawing.Size(777, 154);
             this.dgv_ListMateriaPrima.TabIndex = 77;
-            this.dgv_ListMateriaPrima.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_ListProv_CellContentClick);
+      //      this.dgv_ListMateriaPrima.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_ListProv_CellContentClick);
             // 
             // cBox_ProveedorBuscar
             // 
@@ -235,7 +235,7 @@ namespace Presentacion
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(50)))), ((int)(((byte)(61)))));
-            this.ClientSize = new System.Drawing.Size(844, 492);
+            this.ClientSize = new System.Drawing.Size(860, 531);
             this.Controls.Add(this.cbox_subitpo);
             this.Controls.Add(this.lbl_subtipo);
             this.Controls.Add(this.cBox_Tipo);
