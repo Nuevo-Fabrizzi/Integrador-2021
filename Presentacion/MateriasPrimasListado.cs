@@ -51,11 +51,7 @@ namespace Presentacion
             this.Close();
         }
 
-        private void dgv_ListProv_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
+      
         private void btn_ModifProv_Click(object sender, EventArgs e)
         {
             MateriasPrimas mPri = new MateriasPrimas();
