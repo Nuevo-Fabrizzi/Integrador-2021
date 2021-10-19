@@ -20,3 +20,14 @@ C:\Users\Usuario\Desktop\Integrador-2021\Capa_Negocio\obj\Debug\Capa_Negocio.csp
 C:\Users\Usuario\Desktop\Integrador-2021\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CopyComplete
 C:\Users\Usuario\Desktop\Integrador-2021\Capa_Negocio\obj\Debug\Capa_Negocio.dll
 C:\Users\Usuario\Desktop\Integrador-2021\Capa_Negocio\obj\Debug\Capa_Negocio.pdb
+C:\Users\Manu\Desktop\llkkl\Integrador-2021\Capa_Negocio\bin\Debug\Capa_Negocio.dll
+C:\Users\Manu\Desktop\llkkl\Integrador-2021\Capa_Negocio\bin\Debug\Capa_Negocio.pdb
+C:\Users\Manu\Desktop\llkkl\Integrador-2021\Capa_Negocio\bin\Debug\CapaDato.dll
+C:\Users\Manu\Desktop\llkkl\Integrador-2021\Capa_Negocio\bin\Debug\Capa_entidad.dll
+C:\Users\Manu\Desktop\llkkl\Integrador-2021\Capa_Negocio\bin\Debug\CapaDato.pdb
+C:\Users\Manu\Desktop\llkkl\Integrador-2021\Capa_Negocio\bin\Debug\Capa_entidad.pdb
+C:\Users\Manu\Desktop\llkkl\Integrador-2021\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.AssemblyReference.cache
+C:\Users\Manu\Desktop\llkkl\Integrador-2021\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Manu\Desktop\llkkl\Integrador-2021\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CopyComplete
+C:\Users\Manu\Desktop\llkkl\Integrador-2021\Capa_Negocio\obj\Debug\Capa_Negocio.dll
+C:\Users\Manu\Desktop\llkkl\Integrador-2021\Capa_Negocio\obj\Debug\Capa_Negocio.pdb
