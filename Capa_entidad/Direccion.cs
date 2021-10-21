@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CapaEntidad
+namespace Capa_Entidad
 {
     public class Direccion
     {

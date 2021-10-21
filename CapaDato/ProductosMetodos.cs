@@ -6,14 +6,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
-//using CapaEntidad;
+using Capa_Entidad;
 using Capa_entidad;
 
 namespace Capa_Datos
 {
     public class ProductosMetodos : Conexion
     {
-        public Boolean NuevoProducto(ProductoEntidad producto)
+        public Boolean NuevoProducto(Producto producto)
         {
 
             DateTime fecha = DateTime.Now;
