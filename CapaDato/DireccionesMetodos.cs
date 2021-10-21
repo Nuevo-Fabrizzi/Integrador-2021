@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Data; 
 using System.Data.SqlClient;
-using CapaEntidad;
+using Capa_Entidad;
 using System.Windows.Forms;
 
 namespace Capa_Datos

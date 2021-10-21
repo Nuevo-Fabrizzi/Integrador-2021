@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Data;
 using Capa_Negocio;
-using CapaEntidad;
+using Capa_Entidad;
 
 using System.Windows.Forms;
 
