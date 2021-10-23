@@ -69,5 +69,20 @@ namespace Presentacion
         {
 
         }
+
+        private void iconclose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Fabrizzi_logo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
