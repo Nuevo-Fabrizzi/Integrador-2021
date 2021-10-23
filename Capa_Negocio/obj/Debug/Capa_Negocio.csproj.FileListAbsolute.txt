@@ -31,14 +31,3 @@ C:\Users\Manu\Desktop\llkkl\Integrador-2021\Capa_Negocio\obj\Debug\Capa_Negocio.
 C:\Users\Manu\Desktop\llkkl\Integrador-2021\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CopyComplete
 C:\Users\Manu\Desktop\llkkl\Integrador-2021\Capa_Negocio\obj\Debug\Capa_Negocio.dll
 C:\Users\Manu\Desktop\llkkl\Integrador-2021\Capa_Negocio\obj\Debug\Capa_Negocio.pdb
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Capa_Negocio\bin\Debug\Capa_Negocio.dll
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Capa_Negocio\bin\Debug\Capa_Negocio.pdb
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Capa_Negocio\bin\Debug\CapaDato.dll
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Capa_Negocio\bin\Debug\Capa_entidad.dll
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Capa_Negocio\bin\Debug\CapaDato.pdb
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Capa_Negocio\bin\Debug\Capa_entidad.pdb
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.AssemblyReference.cache
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CoreCompileInputs.cache
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CopyComplete
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Capa_Negocio\obj\Debug\Capa_Negocio.dll
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Capa_Negocio\obj\Debug\Capa_Negocio.pdb
