@@ -59,45 +59,5 @@ namespace Presentacion {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap Fabrizzi_logoRoles_Image {
-            get {
-                object obj = ResourceManager.GetObject("Fabrizzi_logoRoles.Image", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Boolean similar a True.
-        /// </summary>
-        public static bool Fabrizzi_logoRoles_Locked {
-            get {
-                object obj = ResourceManager.GetObject("Fabrizzi_logoRoles.Locked", resourceCulture);
-                return ((bool)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap iconclose_Image {
-            get {
-                object obj = ResourceManager.GetObject("iconclose.Image", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap iconminimizar_Image {
-            get {
-                object obj = ResourceManager.GetObject("iconminimizar.Image", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }

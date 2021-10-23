@@ -104,39 +104,3 @@ C:\Users\Manu\Desktop\llkkl\Integrador-2021\Presentacion\obj\Debug\Presentacion.
 C:\Users\Manu\Desktop\llkkl\Integrador-2021\Presentacion\obj\Debug\Presentacion.exe
 C:\Users\Manu\Desktop\llkkl\Integrador-2021\Presentacion\obj\Debug\Presentacion.pdb
 C:\Users\Usuario\Desktop\Integrador-2021\Presentacion\obj\Debug\Presentacion.CambioProductosClientes.resources
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Presentacion\bin\Debug\Presentacion.exe.config
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Presentacion\bin\Debug\Presentacion.exe
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Presentacion\bin\Debug\Presentacion.pdb
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Presentacion\bin\Debug\Capa_entidad.dll
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Presentacion\bin\Debug\Capa_Negocio.dll
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Presentacion\bin\Debug\CapaDato.dll
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Presentacion\bin\Debug\Capa_entidad.pdb
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Presentacion\bin\Debug\Capa_Negocio.pdb
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Presentacion\bin\Debug\CapaDato.pdb
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Presentacion\obj\Debug\Presentacion.csproj.AssemblyReference.cache
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Presentacion\obj\Debug\Presentacion.CambioProductosClientes.resources
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Presentacion\obj\Debug\Presentacion.DevolucionProductosDeposito.resources
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Presentacion\obj\Debug\Presentacion.Direcciones.resources
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Presentacion\obj\Debug\Presentacion.Locales.resources
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Presentacion\obj\Debug\Presentacion.LocalesListado.resources
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Presentacion\obj\Debug\Presentacion.Login.resources
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Presentacion\obj\Debug\Presentacion.MateriasPrimas.resources
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Presentacion\obj\Debug\Presentacion.MateriasPrimasListado.resources
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Presentacion\obj\Debug\Presentacion.F_Principal.resources
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Presentacion\obj\Debug\Presentacion.Productos.resources
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Presentacion\obj\Debug\Presentacion.ProductosListado.resources
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Presentacion\obj\Debug\Presentacion.Proveedores.resources
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Presentacion\obj\Debug\Presentacion.ProveedoresListado.resources
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Presentacion\obj\Debug\Presentacion.ProveedoresModificar.resources
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Presentacion\obj\Debug\Presentacion.Roles.resources
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Presentacion\obj\Debug\Presentacion.RolesListado.resources
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Presentacion\obj\Debug\Presentacion.RolesModificar.resources
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Presentacion\obj\Debug\Presentacion.UsuarioModificar.resources
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Presentacion\obj\Debug\Presentacion.UsuariosListado.resources
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Presentacion\obj\Debug\Presentacion.Usuarios_Alta.resources
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Presentacion\obj\Debug\Presentacion.Ventas.resources
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.cache
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Presentacion\obj\Debug\Presentacion.exe
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\Presentacion\obj\Debug\Presentacion.pdb

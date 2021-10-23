@@ -25,12 +25,3 @@ C:\Users\Manu\Desktop\llkkl\Integrador-2021\CapaDato\obj\Debug\Capa_Datos.csproj
 C:\Users\Manu\Desktop\llkkl\Integrador-2021\CapaDato\obj\Debug\Capa_Datos.csproj.CopyComplete
 C:\Users\Manu\Desktop\llkkl\Integrador-2021\CapaDato\obj\Debug\CapaDato.dll
 C:\Users\Manu\Desktop\llkkl\Integrador-2021\CapaDato\obj\Debug\CapaDato.pdb
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\CapaDato\bin\Debug\CapaDato.dll
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\CapaDato\bin\Debug\CapaDato.pdb
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\CapaDato\bin\Debug\Capa_entidad.dll
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\CapaDato\bin\Debug\Capa_entidad.pdb
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\CapaDato\obj\Debug\Capa_Datos.csproj.AssemblyReference.cache
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\CapaDato\obj\Debug\Capa_Datos.csproj.CoreCompileInputs.cache
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\CapaDato\obj\Debug\Capa_Datos.csproj.CopyComplete
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\CapaDato\obj\Debug\CapaDato.dll
-C:\Users\emmaa\Desktop\Trabajo Final\Integrador-2021\CapaDato\obj\Debug\CapaDato.pdb
