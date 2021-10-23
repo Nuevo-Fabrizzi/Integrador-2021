@@ -1,6 +1,6 @@
 ﻿using System;
 using Capa_Datos;
-using CapaEntidad;
+using Capa_Entidad;
 using System.Data;
 
 

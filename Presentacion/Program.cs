@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using Capa_Negocio;
-using CapaEntidad;
+using Capa_Entidad;
 using Presentacion;
 
 namespace Presentacion
