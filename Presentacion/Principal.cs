@@ -91,7 +91,6 @@ namespace Presentacion
             RolesListado rolList = new RolesListado();
             rolList.Show();
 
-
         }
 
         private void button7_Click(object sender, EventArgs e)
