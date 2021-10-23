@@ -281,6 +281,7 @@ namespace Presentacion
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Registro_Pedido_Locales";
             this.Text = "Registro_Pedido_Locales";
+            this.Load += new System.EventHandler(this.Registro_Pedido_Locales_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPedidoRegistroLocales_1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

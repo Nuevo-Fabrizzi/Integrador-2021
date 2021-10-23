@@ -16,5 +16,11 @@ namespace Presentacion
         {
             InitializeComponent();
         }
+
+        private void Registro_Pedido_Locales_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+//Ema 23/10 21hs
