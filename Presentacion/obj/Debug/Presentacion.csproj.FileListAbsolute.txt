@@ -56,7 +56,6 @@ C:\Users\Usuario\Desktop\Integrador-2021\Presentacion\obj\Debug\Presentacion.Pro
 C:\Users\Usuario\Desktop\Integrador-2021\Presentacion\obj\Debug\Presentacion.Roles.resources
 C:\Users\Usuario\Desktop\Integrador-2021\Presentacion\obj\Debug\Presentacion.RolesListado.resources
 C:\Users\Usuario\Desktop\Integrador-2021\Presentacion\obj\Debug\Presentacion.RolesModificar.resources
-C:\Users\Usuario\Desktop\Integrador-2021\Presentacion\obj\Debug\Presentacion.UbicacionEnDeposito.resources
 C:\Users\Usuario\Desktop\Integrador-2021\Presentacion\obj\Debug\Presentacion.UsuarioModificar.resources
 C:\Users\Usuario\Desktop\Integrador-2021\Presentacion\obj\Debug\Presentacion.UsuariosListado.resources
 C:\Users\Usuario\Desktop\Integrador-2021\Presentacion\obj\Debug\Presentacion.Usuarios_Alta.resources
@@ -104,3 +103,4 @@ C:\Users\Manu\Desktop\llkkl\Integrador-2021\Presentacion\obj\Debug\Presentacion.
 C:\Users\Manu\Desktop\llkkl\Integrador-2021\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
 C:\Users\Manu\Desktop\llkkl\Integrador-2021\Presentacion\obj\Debug\Presentacion.exe
 C:\Users\Manu\Desktop\llkkl\Integrador-2021\Presentacion\obj\Debug\Presentacion.pdb
+C:\Users\Usuario\Desktop\Integrador-2021\Presentacion\obj\Debug\Presentacion.CambioProductosClientes.resources
