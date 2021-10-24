@@ -34,6 +34,7 @@ namespace Presentacion
             matPriNew.mpri_CodArt = tBox_CodArt.Text;
             matPriNew.mpri_Descripcion = tBox_Desc.Text;
             matPriNew.mpri_CUITprov = cBox_Proveedores.SelectedValue.ToString();
+            matPriNew.mpri_Cantidad = Convert.ToInt32( (tbox_CantPaq.Text));
 
 
             if ((resp == DialogResult.Yes))
@@ -100,6 +101,7 @@ namespace Presentacion
             matPriNew.mpri_Descripcion = tBox_Desc.Text;
             matPriNew.mpri_CUITprov = cBox_Proveedores.SelectedValue.ToString();
             matPriNew.mpri_subtipo = cbox_Subtipo.SelectedItem.ToString();
+            matPriNew.mpri_Cantidad = Convert.ToInt32((tbox_CantPaq.Text));
 
             if ((resp == DialogResult.Yes))
             {
