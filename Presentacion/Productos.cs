@@ -152,7 +152,7 @@ namespace Presentacion
                         cbox_SubtipoProd.SelectedIndex = 0;
                         cmbUbiDepo.Items.Add("PA-Estante 4");
                         break;
-                    case 3:
+                    case 3: //Ambo
                         cbox_SubtipoProd.Enabled = true;
                         cmbUbiDepo.Items.Clear();
                         cmbUbiDepo.Items.Add("PB-Perchero 3");
