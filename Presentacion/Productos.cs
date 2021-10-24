@@ -221,7 +221,7 @@ namespace Presentacion
                         cmbUbiDepo.Items.Add("PA-Estante 3");
                         break;
 
-                    case 11://saco
+                    case 11:
                         cbox_SubtipoProd.Items.Clear();
                         cbox_SubtipoProd.Items.Add("Seleccione");
                         cbox_SubtipoProd.Items.Add("Ambo");
