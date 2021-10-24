@@ -142,6 +142,7 @@ namespace Presentacion
             switch (tipo)
             {
                 case 1:
+                    cbox_Subtipo.Items.Clear();
                     cbox_Subtipo.Items.Add("Seleccione");
                     cbox_Subtipo.Items.Add("Abrojo");
                     cbox_Subtipo.Items.Add("Cierres");
@@ -162,6 +163,7 @@ namespace Presentacion
                     cbox_Subtipo.SelectedIndex = 0;
                     break;
                 case 2:
+                    cbox_Subtipo.Items.Clear();
                     cbox_Subtipo.Items.Add("Seleccione");
                     cbox_Subtipo.Items.Add("Alfileres");
                     cbox_Subtipo.Items.Add("Centimetro plástico");
@@ -171,6 +173,7 @@ namespace Presentacion
                     cbox_Subtipo.SelectedIndex = 0;
                     break;
                 case 3:
+                    cbox_Subtipo.Items.Clear();
                     cbox_Subtipo.Items.Add("Seleccione");
                     cbox_Subtipo.Items.Add("Agujas de máquina");
                     cbox_Subtipo.Items.Add("Base roluet Zic-Zac");

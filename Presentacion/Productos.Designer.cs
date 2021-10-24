@@ -115,7 +115,7 @@ namespace Presentacion
             "Camisas mangas cortas",
             "Camisas mangas largas",
             "Camperas",
-            "Pantalones bermudas",
+            "Pantalones cortos",
             "Pantalones largos",
             "Remeras",
             "Sastreria",
