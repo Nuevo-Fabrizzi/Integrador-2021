@@ -44,6 +44,8 @@
             this.CargarNuevoArt = new System.Windows.Forms.Button();
             this.cbox_Subtipo = new System.Windows.Forms.ComboBox();
             this.lbl_subtipo = new System.Windows.Forms.Label();
+            this.tbox_CantPaq = new System.Windows.Forms.TextBox();
+            this.lbl_CantPaq = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -224,12 +226,33 @@
             this.lbl_subtipo.TabIndex = 90;
             this.lbl_subtipo.Text = "Subtipo:";
             // 
+            // tbox_CantPaq
+            // 
+            this.tbox_CantPaq.Location = new System.Drawing.Point(274, 347);
+            this.tbox_CantPaq.Name = "tbox_CantPaq";
+            this.tbox_CantPaq.Size = new System.Drawing.Size(169, 20);
+            this.tbox_CantPaq.TabIndex = 93;
+            // 
+            // lbl_CantPaq
+            // 
+            this.lbl_CantPaq.AutoSize = true;
+            this.lbl_CantPaq.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lbl_CantPaq.ForeColor = System.Drawing.Color.Cornsilk;
+            this.lbl_CantPaq.Location = new System.Drawing.Point(106, 350);
+            this.lbl_CantPaq.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_CantPaq.Name = "lbl_CantPaq";
+            this.lbl_CantPaq.Size = new System.Drawing.Size(161, 17);
+            this.lbl_CantPaq.TabIndex = 92;
+            this.lbl_CantPaq.Text = "Cantidad de paquetes:";
+            // 
             // MateriasPrimas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(50)))), ((int)(((byte)(61)))));
             this.ClientSize = new System.Drawing.Size(860, 531);
+            this.Controls.Add(this.tbox_CantPaq);
+            this.Controls.Add(this.lbl_CantPaq);
             this.Controls.Add(this.cbox_Subtipo);
             this.Controls.Add(this.lbl_subtipo);
             this.Controls.Add(this.CargarNuevoArt);
@@ -274,5 +297,7 @@
         public System.Windows.Forms.Button CargarNuevoArt;
         private System.Windows.Forms.ComboBox cbox_Subtipo;
         public System.Windows.Forms.Label lbl_subtipo;
+        private System.Windows.Forms.TextBox tbox_CantPaq;
+        public System.Windows.Forms.Label lbl_CantPaq;
     }
 }

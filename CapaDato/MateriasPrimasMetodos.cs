@@ -1,10 +1,6 @@
 ﻿
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using Capa_Entidad;
@@ -20,8 +16,8 @@ namespace Capa_Datos
             {
                 //var idMax = ultimoId();
 
-                var sel = "set dateformat dmy insert into MateriasPrimas (mpri_CodArt,mpri_Descripcion,mpri_tipo, mpri_subtipo, mpri_CUITprov)" +
-                   " VALUES ( '" + MatPri.mpri_CodArt + "','" + MatPri.mpri_Descripcion + "','" + MatPri.mpri_tipo + "','"+ MatPri.mpri_subtipo + "','"+ MatPri.mpri_CUITprov + "')";
+                var sel = "set dateformat dmy insert into MateriasPrimas (mpri_CodArt,mpri_Descripcion,mpri_tipo, mpri_subtipo,mpri_Cantidad, mpri_CUITprov)" +
+                   " VALUES ( '" + MatPri.mpri_CodArt + "','" + MatPri.mpri_Descripcion + "','" + MatPri.mpri_tipo + "','"+ MatPri.mpri_subtipo + "',"+MatPri.mpri_Cantidad + ",'" + MatPri.mpri_CUITprov + "')";
                 SqlCommand com = new SqlCommand(sel, conectar());
 
                 com.ExecuteNonQuery();

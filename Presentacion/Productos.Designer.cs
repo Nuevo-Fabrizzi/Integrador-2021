@@ -111,16 +111,16 @@ namespace Presentacion
             "Seleccione",
             "Abrigos",
             "Accesorios",
+            "Ambos",
             "Calzados",
             "Camisas mangas cortas",
             "Camisas mangas largas",
             "Camperas",
-            "Pantalones bermudas",
+            "Pantalones cortos",
             "Pantalones largos",
             "Remeras",
             "Sastreria",
-            "Sweaters",
-            "Otros"});
+            "Sweaters"});
             this.cBox_TipoProd.Location = new System.Drawing.Point(179, 181);
             this.cBox_TipoProd.Name = "cBox_TipoProd";
             this.cBox_TipoProd.Size = new System.Drawing.Size(195, 21);

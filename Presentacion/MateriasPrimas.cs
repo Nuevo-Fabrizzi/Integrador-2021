@@ -34,6 +34,7 @@ namespace Presentacion
             matPriNew.mpri_CodArt = tBox_CodArt.Text;
             matPriNew.mpri_Descripcion = tBox_Desc.Text;
             matPriNew.mpri_CUITprov = cBox_Proveedores.SelectedValue.ToString();
+            matPriNew.mpri_Cantidad = Convert.ToInt32( (tbox_CantPaq.Text));
 
 
             if ((resp == DialogResult.Yes))
@@ -100,6 +101,7 @@ namespace Presentacion
             matPriNew.mpri_Descripcion = tBox_Desc.Text;
             matPriNew.mpri_CUITprov = cBox_Proveedores.SelectedValue.ToString();
             matPriNew.mpri_subtipo = cbox_Subtipo.SelectedItem.ToString();
+            matPriNew.mpri_Cantidad = Convert.ToInt32((tbox_CantPaq.Text));
 
             if ((resp == DialogResult.Yes))
             {
@@ -140,6 +142,7 @@ namespace Presentacion
             switch (tipo)
             {
                 case 1:
+                    cbox_Subtipo.Items.Clear();
                     cbox_Subtipo.Items.Add("Seleccione");
                     cbox_Subtipo.Items.Add("Abrojo");
                     cbox_Subtipo.Items.Add("Cierres");
@@ -160,6 +163,7 @@ namespace Presentacion
                     cbox_Subtipo.SelectedIndex = 0;
                     break;
                 case 2:
+                    cbox_Subtipo.Items.Clear();
                     cbox_Subtipo.Items.Add("Seleccione");
                     cbox_Subtipo.Items.Add("Alfileres");
                     cbox_Subtipo.Items.Add("Centimetro plástico");
@@ -169,6 +173,7 @@ namespace Presentacion
                     cbox_Subtipo.SelectedIndex = 0;
                     break;
                 case 3:
+                    cbox_Subtipo.Items.Clear();
                     cbox_Subtipo.Items.Add("Seleccione");
                     cbox_Subtipo.Items.Add("Agujas de máquina");
                     cbox_Subtipo.Items.Add("Base roluet Zic-Zac");

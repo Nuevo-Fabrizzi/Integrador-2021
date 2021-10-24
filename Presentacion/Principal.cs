@@ -67,7 +67,7 @@ namespace Presentacion
             ProductosListado ProdList = new ProductosListado();
             ProdList.Show();
         }
-<<<<<<< HEAD
+
 
 
         int m, mx, my;
@@ -168,8 +168,7 @@ namespace Presentacion
         {
             m = 0;
         }
-=======
->>>>>>> cc69aa74f7ef7bb1aeca461484dfb28f8082f16a
+
     }
 }
 
