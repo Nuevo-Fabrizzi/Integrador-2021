@@ -10,7 +10,7 @@ namespace Capa_Datos
         private SqlConnection sCon = new SqlConnection();
 
        // private string con = "Data Source=ERIKA\\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=DB_Fabrizzi";
-        private string con = "Data Source=DESKTOP-VS7IFQH\\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=DB_Fabrizzi";
+        private string con = "Data Source=ITATI\\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=DB_Fabrizzi";
 
         /*  SSPI son las siglas de Security Support Provider Interface. ... 
          * Aparte de SSPI, también puede utilizar "true". La seguridad integrada realmente garantiza 

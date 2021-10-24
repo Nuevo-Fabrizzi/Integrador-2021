@@ -41,15 +41,6 @@ namespace Presentacion
 
         private void F_Principal_Load(object sender, EventArgs e)
         {
-            foreach (Control ctrl in this.Controls)
-            {
-
-                if (ctrl is MdiClient)
-                {
-                    ctrl.BackColor = Color.Black;
-                }
-
-            }
 
         }
 
@@ -76,6 +67,7 @@ namespace Presentacion
             ProductosListado ProdList = new ProductosListado();
             ProdList.Show();
         }
+<<<<<<< HEAD
 
 
         int m, mx, my;
@@ -176,6 +168,8 @@ namespace Presentacion
         {
             m = 0;
         }
+=======
+>>>>>>> cc69aa74f7ef7bb1aeca461484dfb28f8082f16a
     }
 }
 
