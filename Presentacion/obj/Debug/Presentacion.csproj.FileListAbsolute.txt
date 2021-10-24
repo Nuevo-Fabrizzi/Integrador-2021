@@ -141,3 +141,7 @@ C:\Users\Erica\Source\Repos\Fabrizzi_Nuevo\Integrador-2021\Presentacion\bin\Debu
 C:\Users\Erica\Source\Repos\Fabrizzi_Nuevo\Integrador-2021\Presentacion\bin\Debug\Capa_Negocio.pdb
 C:\Users\Erica\Source\Repos\Fabrizzi_Nuevo\Integrador-2021\Presentacion\bin\Debug\CapaDato.pdb
 C:\Users\Erica\Source\Repos\Fabrizzi_Nuevo\Integrador-2021\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
+C:\Users\Erica\Source\Repos\Fabrizzi_Nuevo\Integrador-2021\Presentacion\obj\Debug\Presentacion.Listado_Materias_Primas.resources
+C:\Users\Erica\Source\Repos\Fabrizzi_Nuevo\Integrador-2021\Presentacion\obj\Debug\Presentacion.OlvideMiContraseña.resources
+C:\Users\Erica\Source\Repos\Fabrizzi_Nuevo\Integrador-2021\Presentacion\obj\Debug\Presentacion.Registro_Pedido_Locales.resources
+C:\Users\Erica\Source\Repos\Fabrizzi_Nuevo\Integrador-2021\Presentacion\obj\Debug\Presentacion.Rotacion_De_Productos_Deposito.resources
