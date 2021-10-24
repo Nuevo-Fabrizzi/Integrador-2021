@@ -30,9 +30,11 @@ namespace Presentacion
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.lbl = new System.Windows.Forms.Label();
+            this.lbl_TitVentas = new System.Windows.Forms.Label();
             this.btn_CerrarUsuAlta = new System.Windows.Forms.Button();
             this.dgvVentas = new System.Windows.Forms.DataGridView();
-            this.lbl_TitVentas = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -52,8 +54,7 @@ namespace Presentacion
             this.Descripcion = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.btn_ImprimirVentas = new System.Windows.Forms.Button();
-            this.lbl = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.Btn_GuardarVentaProductos = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVentas)).BeginInit();
             this.SuspendLayout();
@@ -70,6 +71,39 @@ namespace Presentacion
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(956, 86);
             this.panel1.TabIndex = 72;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label10.Location = new System.Drawing.Point(721, 49);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(43, 17);
+            this.label10.TabIndex = 103;
+            this.label10.Text = "Local";
+            // 
+            // lbl
+            // 
+            this.lbl.AutoSize = true;
+            this.lbl.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbl.Location = new System.Drawing.Point(721, 26);
+            this.lbl.Name = "lbl";
+            this.lbl.Size = new System.Drawing.Size(60, 17);
+            this.lbl.TabIndex = 102;
+            this.lbl.Text = "Usuario";
+            // 
+            // lbl_TitVentas
+            // 
+            this.lbl_TitVentas.AutoSize = true;
+            this.lbl_TitVentas.Font = new System.Drawing.Font("Segoe UI Symbol", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_TitVentas.ForeColor = System.Drawing.Color.White;
+            this.lbl_TitVentas.Location = new System.Drawing.Point(296, 26);
+            this.lbl_TitVentas.Name = "lbl_TitVentas";
+            this.lbl_TitVentas.Size = new System.Drawing.Size(242, 40);
+            this.lbl_TitVentas.TabIndex = 83;
+            this.lbl_TitVentas.Text = "Venta Productos";
             // 
             // btn_CerrarUsuAlta
             // 
@@ -89,83 +123,72 @@ namespace Presentacion
             this.dgvVentas.AllowUserToDeleteRows = false;
             this.dgvVentas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgvVentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvVentas.Location = new System.Drawing.Point(29, 147);
+            this.dgvVentas.Location = new System.Drawing.Point(20, 125);
             this.dgvVentas.Name = "dgvVentas";
             this.dgvVentas.ReadOnly = true;
             this.dgvVentas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvVentas.Size = new System.Drawing.Size(761, 154);
             this.dgvVentas.TabIndex = 82;
             // 
-            // lbl_TitVentas
-            // 
-            this.lbl_TitVentas.AutoSize = true;
-            this.lbl_TitVentas.Font = new System.Drawing.Font("Segoe UI Symbol", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_TitVentas.ForeColor = System.Drawing.Color.White;
-            this.lbl_TitVentas.Location = new System.Drawing.Point(296, 26);
-            this.lbl_TitVentas.Name = "lbl_TitVentas";
-            this.lbl_TitVentas.Size = new System.Drawing.Size(242, 40);
-            this.lbl_TitVentas.TabIndex = 83;
-            this.lbl_TitVentas.Text = "Venta Productos";
-            // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(36, 342);
+            this.textBox1.Location = new System.Drawing.Point(36, 318);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(166, 20);
             this.textBox1.TabIndex = 83;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(36, 413);
+            this.textBox2.Location = new System.Drawing.Point(36, 389);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(166, 20);
             this.textBox2.TabIndex = 84;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(287, 342);
+            this.textBox3.Location = new System.Drawing.Point(287, 318);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 85;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(438, 342);
+            this.textBox4.Location = new System.Drawing.Point(438, 318);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 20);
             this.textBox4.TabIndex = 86;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(584, 342);
+            this.textBox5.Location = new System.Drawing.Point(584, 318);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(100, 20);
             this.textBox5.TabIndex = 87;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(724, 342);
+            this.textBox6.Location = new System.Drawing.Point(724, 318);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(33, 20);
             this.textBox6.TabIndex = 88;
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(584, 413);
+            this.textBox7.Location = new System.Drawing.Point(584, 389);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(100, 20);
             this.textBox7.TabIndex = 89;
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(798, 342);
+            this.textBox8.Location = new System.Drawing.Point(798, 318);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(107, 20);
             this.textBox8.TabIndex = 90;
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(798, 413);
+            this.textBox9.Location = new System.Drawing.Point(798, 389);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(107, 20);
             this.textBox9.TabIndex = 91;
@@ -175,7 +198,7 @@ namespace Presentacion
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(583, 436);
+            this.label1.Location = new System.Drawing.Point(583, 412);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(101, 17);
             this.label1.TabIndex = 92;
@@ -186,7 +209,7 @@ namespace Presentacion
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(57, 365);
+            this.label2.Location = new System.Drawing.Point(57, 341);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(114, 17);
             this.label2.TabIndex = 93;
@@ -197,7 +220,7 @@ namespace Presentacion
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(300, 365);
+            this.label3.Location = new System.Drawing.Point(300, 341);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(73, 17);
             this.label3.TabIndex = 94;
@@ -208,7 +231,7 @@ namespace Presentacion
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(460, 365);
+            this.label4.Location = new System.Drawing.Point(460, 341);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(50, 17);
             this.label4.TabIndex = 95;
@@ -219,7 +242,7 @@ namespace Presentacion
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(597, 365);
+            this.label5.Location = new System.Drawing.Point(597, 341);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(78, 17);
             this.label5.TabIndex = 96;
@@ -230,7 +253,7 @@ namespace Presentacion
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(721, 365);
+            this.label6.Location = new System.Drawing.Point(721, 341);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(31, 17);
             this.label6.TabIndex = 97;
@@ -242,7 +265,7 @@ namespace Presentacion
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(809, 365);
+            this.label7.Location = new System.Drawing.Point(809, 341);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(89, 17);
             this.label7.TabIndex = 98;
@@ -253,7 +276,7 @@ namespace Presentacion
             this.Descripcion.AutoSize = true;
             this.Descripcion.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Descripcion.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Descripcion.Location = new System.Drawing.Point(68, 436);
+            this.Descripcion.Location = new System.Drawing.Point(68, 412);
             this.Descripcion.Name = "Descripcion";
             this.Descripcion.Size = new System.Drawing.Size(87, 17);
             this.Descripcion.TabIndex = 99;
@@ -264,7 +287,7 @@ namespace Presentacion
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(809, 436);
+            this.label9.Location = new System.Drawing.Point(809, 412);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(86, 17);
             this.label9.TabIndex = 100;
@@ -275,34 +298,24 @@ namespace Presentacion
             this.btn_ImprimirVentas.BackColor = System.Drawing.Color.SeaGreen;
             this.btn_ImprimirVentas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ImprimirVentas.ForeColor = System.Drawing.Color.White;
-            this.btn_ImprimirVentas.Location = new System.Drawing.Point(812, 174);
+            this.btn_ImprimirVentas.Location = new System.Drawing.Point(798, 161);
             this.btn_ImprimirVentas.Name = "btn_ImprimirVentas";
             this.btn_ImprimirVentas.Size = new System.Drawing.Size(140, 39);
             this.btn_ImprimirVentas.TabIndex = 101;
             this.btn_ImprimirVentas.Text = "Imprimir";
             this.btn_ImprimirVentas.UseVisualStyleBackColor = false;
             // 
-            // lbl
+            // Btn_GuardarVentaProductos
             // 
-            this.lbl.AutoSize = true;
-            this.lbl.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl.Location = new System.Drawing.Point(721, 26);
-            this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(60, 17);
-            this.lbl.TabIndex = 102;
-            this.lbl.Text = "Usuario";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label10.Location = new System.Drawing.Point(721, 49);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(43, 17);
-            this.label10.TabIndex = 103;
-            this.label10.Text = "Local";
+            this.Btn_GuardarVentaProductos.BackColor = System.Drawing.Color.SeaGreen;
+            this.Btn_GuardarVentaProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_GuardarVentaProductos.ForeColor = System.Drawing.Color.White;
+            this.Btn_GuardarVentaProductos.Location = new System.Drawing.Point(798, 222);
+            this.Btn_GuardarVentaProductos.Name = "Btn_GuardarVentaProductos";
+            this.Btn_GuardarVentaProductos.Size = new System.Drawing.Size(140, 39);
+            this.Btn_GuardarVentaProductos.TabIndex = 102;
+            this.Btn_GuardarVentaProductos.Text = "Guardar";
+            this.Btn_GuardarVentaProductos.UseVisualStyleBackColor = false;
             // 
             // Ventas
             // 
@@ -310,6 +323,7 @@ namespace Presentacion
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(50)))), ((int)(((byte)(61)))));
             this.ClientSize = new System.Drawing.Size(956, 534);
+            this.Controls.Add(this.Btn_GuardarVentaProductos);
             this.Controls.Add(this.btn_ImprimirVentas);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.Descripcion);
@@ -369,5 +383,6 @@ namespace Presentacion
         private System.Windows.Forms.Button btn_ImprimirVentas;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label lbl;
+        private System.Windows.Forms.Button Btn_GuardarVentaProductos;
     }
 }
