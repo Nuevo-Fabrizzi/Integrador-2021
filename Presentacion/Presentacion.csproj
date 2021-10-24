@@ -74,6 +74,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Direcciones.resx</DependentUpon>
     </Compile>
+    <Compile Include="Listado Materias Primas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listado Materias Primas.Designer.cs">
+      <DependentUpon>Listado Materias Primas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Locales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>MateriasPrimasListado.resx</DependentUpon>
+    </Compile>
+    <Compile Include="OlvideMiContraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OlvideMiContraseña.Designer.cs">
+      <DependentUpon>OlvideMiContraseña.cs</DependentUpon>
     </Compile>
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
@@ -221,6 +233,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RolesModificar.resx</DependentUpon>
     </Compile>
+    <Compile Include="Rotacion_De_Productos_Deposito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rotacion_De_Productos_Deposito.Designer.cs">
+      <DependentUpon>Rotacion_De_Productos_Deposito.cs</DependentUpon>
+    </Compile>
     <Compile Include="UsuarioModificar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -271,6 +289,9 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Direcciones1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Listado Materias Primas.resx">
+      <DependentUpon>Listado Materias Primas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Locales.resx">
       <DependentUpon>Locales.cs</DependentUpon>
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -293,6 +314,9 @@
       <DependentUpon>MateriasPrimasListado.cs</DependentUpon>
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>MateriasPrimasListado1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OlvideMiContraseña.resx">
+      <DependentUpon>OlvideMiContraseña.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
@@ -346,6 +370,9 @@
       <DependentUpon>RolesModificar.cs</DependentUpon>
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>RolesModificar1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rotacion_De_Productos_Deposito.resx">
+      <DependentUpon>Rotacion_De_Productos_Deposito.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UsuarioModificar.resx">
       <DependentUpon>UsuarioModificar.cs</DependentUpon>
