@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Capa_Negocio;
 
@@ -26,17 +20,15 @@ namespace Presentacion
             {
                 tBox_Legajo.Text = legajo.ToString();
             }
-            else
-            {
-                legajo = Convert.ToInt32(tBox_Legajo.Text);
-            }
+           
         }
 
         private void Btn_GuardarNuevaPass_Click(object sender, EventArgs e)
         {
             var logNeg = new LoginNegocio();
             var dt = new DataTable();
-            dt = logNeg.consultaExisteLegajo(legajo);
+            legajo = Convert.ToInt32(tBox_Legajo.Text);
+            dt = logNeg.consultaExisteLegajo(legajo);            
             string passNueva = tBox_NuevaPass.Text;
             string repPass = tBox_RepetirPass.Text;
 
