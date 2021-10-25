@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using Capa_Entidad;
@@ -48,6 +44,38 @@ namespace Capa_Datos
             return dt;
         }
 
+        public Boolean CambiarPass(int  legajo, string pass)
+        {
+            try
+            {
+                //var idMax = ultimoId();
+
+                var sel = "update Usuarios set usu_Contrasenia = "+ pass +", usu_FechaDeMod = GETDATE() where usu_legajo ="+ legajo + ";";
+                SqlCommand com = new SqlCommand(sel, conectar());
+
+                com.ExecuteNonQuery();
+
+                return true;
+            }
+#pragma warning disable CS0168 // La variable 'ex' se ha declarado pero nunca se usa
+            catch (Exception ex)
+#pragma warning restore CS0168 // La variable 'ex' se ha declarado pero nunca se usa
+            {
+                return false;
+            }
+        }
+
+        public DataTable consultaExisteLegajo(int legajo)
+        {
+
+            string sqlStr2 = "select usu_Legajo from Usuarios where usu_Legajo = " + legajo + ";";
+
+            var dap = new SqlDataAdapter(sqlStr2, conectar());
+            var da = new DataTable();
+            dap.Fill(da);
+            DataTable dt = da;
+            return dt;
+        }
         //public Boolean grabarUsuario(LoginEn usu)
         //{
         //    try
