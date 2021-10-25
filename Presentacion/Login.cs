@@ -8,10 +8,12 @@ namespace Presentacion
 {
     public partial class Login : Form
     {
+        
         public Login()
         {
             InitializeComponent();
         }
+
         
 
         private void Btn_Ingresar_Click(object sender, EventArgs e)
@@ -22,6 +24,9 @@ namespace Presentacion
             var usuario = TextBox_User.Text;
             var pas = TextBox_Password.Text;
             dt = usu.ConsultarLogin(usuario, pas);
+
+            
+            
 
             if (dt.Rows.Count == 1)
             {
@@ -67,6 +72,17 @@ namespace Presentacion
 
         private void Login_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void linklbl_RestartPass_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            OlvideMiContraseña olvMiCon = new OlvideMiContraseña();
+            var usuario = TextBox_User.Text;
+            olvMiCon.legajo = Convert.ToInt32(usuario);
+            
+            olvMiCon.Show();
+            
 
         }
     }

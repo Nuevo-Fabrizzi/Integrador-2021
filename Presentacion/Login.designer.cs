@@ -104,6 +104,7 @@
             this.linklbl_RestartPass.TabIndex = 5;
             this.linklbl_RestartPass.TabStop = true;
             this.linklbl_RestartPass.Text = "Olvide mi contraseña";
+            this.linklbl_RestartPass.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linklbl_RestartPass_LinkClicked);
             // 
             // Fabrizzi_logo
             // 
@@ -158,15 +159,14 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox TextBox_User;
-        private System.Windows.Forms.TextBox TextBox_Password;
         private System.Windows.Forms.Label lbl_user;
         private System.Windows.Forms.Label lbl_pass;
         private System.Windows.Forms.Button Btn_Ingresar;
         private System.Windows.Forms.LinkLabel linklbl_RestartPass;
         public System.Windows.Forms.PictureBox Fabrizzi_logo;
         private System.Windows.Forms.Button btn_CerrarLogin;
+        public System.Windows.Forms.TextBox TextBox_User;
+        public System.Windows.Forms.TextBox TextBox_Password;
     }
 }
 

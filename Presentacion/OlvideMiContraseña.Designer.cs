@@ -32,11 +32,13 @@ namespace Presentacion
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OlvideMiContraseña));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.iconclose = new System.Windows.Forms.PictureBox();
-            this.Btn_IngresarRecuperarPass = new System.Windows.Forms.Button();
-            this.lbl_pass = new System.Windows.Forms.Label();
-            this.lbl_user = new System.Windows.Forms.Label();
-            this.TextBox_Password = new System.Windows.Forms.TextBox();
-            this.TextBox_User = new System.Windows.Forms.TextBox();
+            this.Btn_GuardarNuevaPass = new System.Windows.Forms.Button();
+            this.lbl_RepetirPass = new System.Windows.Forms.Label();
+            this.lbl_NuevaPass = new System.Windows.Forms.Label();
+            this.tBox_RepetirPass = new System.Windows.Forms.TextBox();
+            this.tBox_NuevaPass = new System.Windows.Forms.TextBox();
+            this.lbl_Legajo = new System.Windows.Forms.Label();
+            this.tBox_Legajo = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconclose)).BeginInit();
             this.SuspendLayout();
@@ -46,7 +48,7 @@ namespace Presentacion
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(108, -21);
+            this.pictureBox1.Location = new System.Drawing.Point(82, -20);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(222, 134);
             this.pictureBox1.TabIndex = 79;
@@ -62,58 +64,78 @@ namespace Presentacion
             this.iconclose.TabIndex = 78;
             this.iconclose.TabStop = false;
             // 
-            // Btn_IngresarRecuperarPass
+            // Btn_GuardarNuevaPass
             // 
-            this.Btn_IngresarRecuperarPass.BackColor = System.Drawing.Color.SeaGreen;
-            this.Btn_IngresarRecuperarPass.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_IngresarRecuperarPass.ForeColor = System.Drawing.Color.White;
-            this.Btn_IngresarRecuperarPass.Location = new System.Drawing.Point(138, 249);
-            this.Btn_IngresarRecuperarPass.Name = "Btn_IngresarRecuperarPass";
-            this.Btn_IngresarRecuperarPass.Size = new System.Drawing.Size(129, 49);
-            this.Btn_IngresarRecuperarPass.TabIndex = 76;
-            this.Btn_IngresarRecuperarPass.Text = "Guardar";
-            this.Btn_IngresarRecuperarPass.UseVisualStyleBackColor = false;
+            this.Btn_GuardarNuevaPass.BackColor = System.Drawing.Color.SeaGreen;
+            this.Btn_GuardarNuevaPass.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_GuardarNuevaPass.ForeColor = System.Drawing.Color.White;
+            this.Btn_GuardarNuevaPass.Location = new System.Drawing.Point(141, 281);
+            this.Btn_GuardarNuevaPass.Name = "Btn_GuardarNuevaPass";
+            this.Btn_GuardarNuevaPass.Size = new System.Drawing.Size(129, 49);
+            this.Btn_GuardarNuevaPass.TabIndex = 76;
+            this.Btn_GuardarNuevaPass.Text = "Guardar";
+            this.Btn_GuardarNuevaPass.UseVisualStyleBackColor = false;
+            this.Btn_GuardarNuevaPass.Click += new System.EventHandler(this.Btn_GuardarNuevaPass_Click);
             // 
-            // lbl_pass
+            // lbl_RepetirPass
             // 
-            this.lbl_pass.AutoSize = true;
-            this.lbl_pass.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_pass.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_pass.ForeColor = System.Drawing.Color.White;
-            this.lbl_pass.Location = new System.Drawing.Point(40, 193);
-            this.lbl_pass.Name = "lbl_pass";
-            this.lbl_pass.Size = new System.Drawing.Size(149, 17);
-            this.lbl_pass.TabIndex = 75;
-            this.lbl_pass.Text = "Reingrese Contraseña";
+            this.lbl_RepetirPass.AutoSize = true;
+            this.lbl_RepetirPass.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_RepetirPass.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_RepetirPass.ForeColor = System.Drawing.Color.White;
+            this.lbl_RepetirPass.Location = new System.Drawing.Point(37, 229);
+            this.lbl_RepetirPass.Name = "lbl_RepetirPass";
+            this.lbl_RepetirPass.Size = new System.Drawing.Size(133, 17);
+            this.lbl_RepetirPass.TabIndex = 75;
+            this.lbl_RepetirPass.Text = "Repetir Contraseña";
             // 
-            // lbl_user
+            // lbl_NuevaPass
             // 
-            this.lbl_user.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.lbl_user.AutoSize = true;
-            this.lbl_user.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_user.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_user.ForeColor = System.Drawing.Color.White;
-            this.lbl_user.Location = new System.Drawing.Point(40, 158);
-            this.lbl_user.Name = "lbl_user";
-            this.lbl_user.Size = new System.Drawing.Size(131, 17);
-            this.lbl_user.TabIndex = 74;
-            this.lbl_user.Text = "Nueva Contraseña";
-            this.lbl_user.Click += new System.EventHandler(this.lbl_user_Click);
+            this.lbl_NuevaPass.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.lbl_NuevaPass.AutoSize = true;
+            this.lbl_NuevaPass.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_NuevaPass.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_NuevaPass.ForeColor = System.Drawing.Color.White;
+            this.lbl_NuevaPass.Location = new System.Drawing.Point(37, 194);
+            this.lbl_NuevaPass.Name = "lbl_NuevaPass";
+            this.lbl_NuevaPass.Size = new System.Drawing.Size(131, 17);
+            this.lbl_NuevaPass.TabIndex = 74;
+            this.lbl_NuevaPass.Text = "Nueva Contraseña";
             // 
-            // TextBox_Password
+            // tBox_RepetirPass
             // 
-            this.TextBox_Password.Location = new System.Drawing.Point(201, 193);
-            this.TextBox_Password.Name = "TextBox_Password";
-            this.TextBox_Password.PasswordChar = '*';
-            this.TextBox_Password.Size = new System.Drawing.Size(129, 20);
-            this.TextBox_Password.TabIndex = 73;
+            this.tBox_RepetirPass.Location = new System.Drawing.Point(198, 229);
+            this.tBox_RepetirPass.Name = "tBox_RepetirPass";
+            this.tBox_RepetirPass.PasswordChar = '*';
+            this.tBox_RepetirPass.Size = new System.Drawing.Size(129, 20);
+            this.tBox_RepetirPass.TabIndex = 73;
             // 
-            // TextBox_User
+            // tBox_NuevaPass
             // 
-            this.TextBox_User.Location = new System.Drawing.Point(201, 158);
-            this.TextBox_User.Name = "TextBox_User";
-            this.TextBox_User.Size = new System.Drawing.Size(129, 20);
-            this.TextBox_User.TabIndex = 72;
+            this.tBox_NuevaPass.Location = new System.Drawing.Point(198, 194);
+            this.tBox_NuevaPass.Name = "tBox_NuevaPass";
+            this.tBox_NuevaPass.Size = new System.Drawing.Size(129, 20);
+            this.tBox_NuevaPass.TabIndex = 72;
+            // 
+            // lbl_Legajo
+            // 
+            this.lbl_Legajo.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.lbl_Legajo.AutoSize = true;
+            this.lbl_Legajo.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Legajo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Legajo.ForeColor = System.Drawing.Color.White;
+            this.lbl_Legajo.Location = new System.Drawing.Point(39, 156);
+            this.lbl_Legajo.Name = "lbl_Legajo";
+            this.lbl_Legajo.Size = new System.Drawing.Size(52, 17);
+            this.lbl_Legajo.TabIndex = 81;
+            this.lbl_Legajo.Text = "Legajo";
+            // 
+            // tBox_Legajo
+            // 
+            this.tBox_Legajo.Location = new System.Drawing.Point(198, 156);
+            this.tBox_Legajo.Name = "tBox_Legajo";
+            this.tBox_Legajo.Size = new System.Drawing.Size(129, 20);
+            this.tBox_Legajo.TabIndex = 80;
             // 
             // OlvideMiContraseña
             // 
@@ -121,16 +143,19 @@ namespace Presentacion
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(398, 367);
+            this.Controls.Add(this.lbl_Legajo);
+            this.Controls.Add(this.tBox_Legajo);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.iconclose);
-            this.Controls.Add(this.Btn_IngresarRecuperarPass);
-            this.Controls.Add(this.lbl_pass);
-            this.Controls.Add(this.lbl_user);
-            this.Controls.Add(this.TextBox_Password);
-            this.Controls.Add(this.TextBox_User);
+            this.Controls.Add(this.Btn_GuardarNuevaPass);
+            this.Controls.Add(this.lbl_RepetirPass);
+            this.Controls.Add(this.lbl_NuevaPass);
+            this.Controls.Add(this.tBox_RepetirPass);
+            this.Controls.Add(this.tBox_NuevaPass);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "OlvideMiContraseña";
             this.Text = "OlvideMiContraseña";
+            this.Load += new System.EventHandler(this.OlvideMiContraseña_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconclose)).EndInit();
             this.ResumeLayout(false);
@@ -142,10 +167,12 @@ namespace Presentacion
 
         public System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox iconclose;
-        private System.Windows.Forms.Button Btn_IngresarRecuperarPass;
-        private System.Windows.Forms.Label lbl_pass;
-        private System.Windows.Forms.Label lbl_user;
-        private System.Windows.Forms.TextBox TextBox_Password;
-        private System.Windows.Forms.TextBox TextBox_User;
+        private System.Windows.Forms.Button Btn_GuardarNuevaPass;
+        private System.Windows.Forms.Label lbl_RepetirPass;
+        private System.Windows.Forms.Label lbl_NuevaPass;
+        private System.Windows.Forms.TextBox tBox_RepetirPass;
+        private System.Windows.Forms.TextBox tBox_NuevaPass;
+        private System.Windows.Forms.Label lbl_Legajo;
+        private System.Windows.Forms.TextBox tBox_Legajo;
     }
 }
