@@ -35,7 +35,7 @@ namespace Presentacion
             this.lbl_TitVentas = new System.Windows.Forms.Label();
             this.btn_CerrarUsuAlta = new System.Windows.Forms.Button();
             this.dgvVentas = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCodProd = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -130,12 +130,14 @@ namespace Presentacion
             this.dgvVentas.Size = new System.Drawing.Size(761, 154);
             this.dgvVentas.TabIndex = 82;
             // 
-            // textBox1
+            // txtCodProd
             // 
-            this.textBox1.Location = new System.Drawing.Point(36, 318);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(166, 20);
-            this.textBox1.TabIndex = 83;
+            this.txtCodProd.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.txtCodProd.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.txtCodProd.Location = new System.Drawing.Point(36, 318);
+            this.txtCodProd.Name = "txtCodProd";
+            this.txtCodProd.Size = new System.Drawing.Size(166, 20);
+            this.txtCodProd.TabIndex = 83;
             // 
             // textBox2
             // 
@@ -258,7 +260,6 @@ namespace Presentacion
             this.label6.Size = new System.Drawing.Size(31, 17);
             this.label6.TabIndex = 97;
             this.label6.Text = "C/T";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 
@@ -342,7 +343,7 @@ namespace Presentacion
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCodProd);
             this.Controls.Add(this.dgvVentas);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -362,7 +363,7 @@ namespace Presentacion
         private System.Windows.Forms.Button btn_CerrarUsuAlta;
         private System.Windows.Forms.DataGridView dgvVentas;
         private System.Windows.Forms.Label lbl_TitVentas;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCodProd;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;

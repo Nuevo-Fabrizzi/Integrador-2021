@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Capa_Entidad;
+using System.Data;
 using Capa_Datos;
-using Capa_entidad;
+using Capa_Entidad;
+using System.Data.SqlClient;
 
 namespace Capa_Negocio
 {
@@ -17,5 +18,19 @@ namespace Capa_Negocio
             Boolean result = objProdMetodos.NuevoProducto(prod);
             return result;
         }
+        public DataTable ConsultarProducto()
+        {
+            return objProdMetodos.ConsultarProducto();
+        }
+
+        public DataTable ConsultarProductoTemporada(Producto prod_CodDeProd)
+        {
+            return objProdMetodos.ConsultarProductoTemporada(prod_CodDeProd);
+        }
+
+        //public DataTable ConsultarProductoTemporada(string pTemp)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }

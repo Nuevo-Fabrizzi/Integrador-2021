@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using Capa_Entidad;
-using Capa_entidad;
+
 
 namespace Capa_Datos
 {
@@ -36,6 +36,54 @@ namespace Capa_Datos
             }
         }
 
+        public DataTable ConsultarProductoTemporada(Producto producto, object prod_Temporada)
+        {
+            throw new NotImplementedException();
+        }
+
+        public DataTable ConsultarProducto()
+        {
+            var sqlStr = "select * from Productos";
+            var da = new SqlDataAdapter(sqlStr, conectar());
+            var ds = new DataSet();
+            da.Fill(ds);
+            DataTable dt = ds.Tables[0];
+
+            return dt;
+        }
+
+        public DataTable ConsultarProductoTemporada(Producto prod_CodDeProd)
+        {
+            var sqlStr = "select * from Productos where prod_CodDeProd like '"+ prod_CodDeProd + "%'";
+            var da = new SqlDataAdapter(sqlStr, conectar());
+            var ds = new DataSet();
+            da.Fill(ds);
+            DataTable dt = ds.Tables[0];
+
+            return dt;
+        }
+
+       // select* from Productos where prod_CodDeProd like 'I%'
+        public DataTable ConsultarProductoTipo()
+        {
+            var sqlStr = "select * from Productos";
+            var da = new SqlDataAdapter(sqlStr, conectar());
+            var ds = new DataSet();
+            da.Fill(ds);
+            DataTable dt = ds.Tables[0];
+
+            return dt;
+        }
+        public DataTable ConsultarProductoSubtipo()
+        {
+            var sqlStr = "select * from Productos";
+            var da = new SqlDataAdapter(sqlStr, conectar());
+            var ds = new DataSet();
+            da.Fill(ds);
+            DataTable dt = ds.Tables[0];
+
+            return dt;
+        }
     }
 }
 
