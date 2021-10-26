@@ -85,11 +85,7 @@ namespace Presentacion
             {
                 olvMiCon.legajo = Convert.ToInt32(usuario);
             }
-            //else
-            //{
-            //    usuario = "0";
-            //    olvMiCon.legajo = Convert.ToInt32(usuario);
-            //}
+           
             
             
             olvMiCon.Show();
