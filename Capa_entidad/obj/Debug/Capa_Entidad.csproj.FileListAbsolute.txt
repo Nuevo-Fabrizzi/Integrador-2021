@@ -20,3 +20,4 @@ C:\Users\Erica\Source\Repos\Fabrizzi_Nuevo\Integrador-2021\Capa_entidad\bin\Debu
 C:\Users\Erica\Source\Repos\Fabrizzi_Nuevo\Integrador-2021\Capa_entidad\obj\Debug\Capa_Entidad.csproj.CoreCompileInputs.cache
 C:\Users\Erica\Source\Repos\Fabrizzi_Nuevo\Integrador-2021\Capa_entidad\obj\Debug\Capa_entidad.dll
 C:\Users\Erica\Source\Repos\Fabrizzi_Nuevo\Integrador-2021\Capa_entidad\obj\Debug\Capa_entidad.pdb
+C:\Users\Erica\Source\Repos\Fabrizzi_Nuevo\Integrador-2021\Capa_entidad\obj\Debug\Capa_Entidad.csproj.AssemblyReference.cache
