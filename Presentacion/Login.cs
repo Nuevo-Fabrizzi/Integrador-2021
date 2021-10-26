@@ -25,8 +25,7 @@ namespace Presentacion
             var usuario = TextBox_User.Text;
             var pas = TextBox_Password.Text;
             dt = usu.ConsultarLogin(usuario, pas);
-
-            
+                       
             
 
             if (dt.Rows.Count == 1)
@@ -76,11 +75,19 @@ namespace Presentacion
 
         }
 
+        
+
         private void linklbl_RestartPass_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             OlvideMiContraseña olvMiCon = new OlvideMiContraseña();
             var usuario = TextBox_User.Text;
-            olvMiCon.legajo = Convert.ToInt32(usuario);
+
+            if (usuario != "")
+            {
+                olvMiCon.legajo = Convert.ToInt32(usuario);
+            }
+           
+            
             
             olvMiCon.Show();
             

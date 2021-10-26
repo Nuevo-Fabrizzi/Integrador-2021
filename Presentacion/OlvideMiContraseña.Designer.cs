@@ -63,6 +63,7 @@ namespace Presentacion
             this.iconclose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.iconclose.TabIndex = 78;
             this.iconclose.TabStop = false;
+            this.iconclose.Click += new System.EventHandler(this.iconclose_Click);
             // 
             // Btn_GuardarNuevaPass
             // 
@@ -114,6 +115,7 @@ namespace Presentacion
             // 
             this.tBox_NuevaPass.Location = new System.Drawing.Point(198, 194);
             this.tBox_NuevaPass.Name = "tBox_NuevaPass";
+            this.tBox_NuevaPass.PasswordChar = '*';
             this.tBox_NuevaPass.Size = new System.Drawing.Size(129, 20);
             this.tBox_NuevaPass.TabIndex = 72;
             // 
