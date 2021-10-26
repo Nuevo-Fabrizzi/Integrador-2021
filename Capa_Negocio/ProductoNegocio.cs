@@ -28,9 +28,9 @@ namespace Capa_Negocio
             return objProdMetodos.ConsultarProductoTemporada(prod_CodDeProd);
         }
 
-        //public DataTable ConsultarProductoTemporada(string pTemp)
-        //{
-        //    throw new NotImplementedException();
-        //}
+        public DataTable ConsultarProductoSubtipo(Producto prod_Tipo, Producto prod_subTipo)
+        {
+            return objProdMetodos.ConsultarProductoSubtipo(prod_Tipo, prod_subTipo);
+        }
     }
 }

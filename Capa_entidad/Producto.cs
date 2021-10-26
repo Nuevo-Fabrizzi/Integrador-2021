@@ -12,6 +12,7 @@ namespace Capa_Entidad
         public String prod_Descripción { get; set; }
         public String prod_Talle { get; set; }
         public String prod_Tipo { get; set; }
+        public String prod_subTipo { get; set; }
         public String prod_UbicEnDepo { get; set; }
         public int prod_Cantidad { get; set; }
         public int prod_StockMin { get; set; }

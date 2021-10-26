@@ -29,7 +29,7 @@ namespace Presentacion
         /// </summary>
         private void InitializeComponent()
         {
-            this.cbox_subitpoProd = new System.Windows.Forms.ComboBox();
+            this.cbox_subtipoProd = new System.Windows.Forms.ComboBox();
             this.lbl_subtipo = new System.Windows.Forms.Label();
             this.cBox_TipoProd = new System.Windows.Forms.ComboBox();
             this.lbl_Tipo = new System.Windows.Forms.Label();
@@ -48,13 +48,14 @@ namespace Presentacion
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // cbox_subitpoProd
+            // cbox_subtipoProd
             // 
-            this.cbox_subitpoProd.FormattingEnabled = true;
-            this.cbox_subitpoProd.Location = new System.Drawing.Point(418, 165);
-            this.cbox_subitpoProd.Name = "cbox_subitpoProd";
-            this.cbox_subitpoProd.Size = new System.Drawing.Size(195, 21);
-            this.cbox_subitpoProd.TabIndex = 108;
+            this.cbox_subtipoProd.FormattingEnabled = true;
+            this.cbox_subtipoProd.Location = new System.Drawing.Point(418, 165);
+            this.cbox_subtipoProd.Name = "cbox_subtipoProd";
+            this.cbox_subtipoProd.Size = new System.Drawing.Size(195, 21);
+            this.cbox_subtipoProd.TabIndex = 108;
+            this.cbox_subtipoProd.SelectedIndexChanged += new System.EventHandler(this.cbox_subitpoProd_SelectedIndexChanged);
             // 
             // lbl_subtipo
             // 
@@ -73,14 +74,23 @@ namespace Presentacion
             this.cBox_TipoProd.FormattingEnabled = true;
             this.cBox_TipoProd.Items.AddRange(new object[] {
             "Seleccione",
-            "De Confección",
-            "De Corte",
-            "Maquinarias",
-            "Otros"});
+            "Abrigos",
+            "Accesorios",
+            "Ambos",
+            "Calzados",
+            "Camisas mangas cortas",
+            "Camisas mangas largas",
+            "Camperas",
+            "Pantalones cortos",
+            "Pantalones largos",
+            "Remeras",
+            "Sastreria",
+            "Sweaters"});
             this.cBox_TipoProd.Location = new System.Drawing.Point(101, 165);
             this.cBox_TipoProd.Name = "cBox_TipoProd";
             this.cBox_TipoProd.Size = new System.Drawing.Size(195, 21);
             this.cBox_TipoProd.TabIndex = 106;
+            this.cBox_TipoProd.SelectedIndexChanged += new System.EventHandler(this.cBox_TipoProd_SelectedIndexChanged);
             // 
             // lbl_Tipo
             // 
@@ -234,7 +244,7 @@ namespace Presentacion
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(50)))), ((int)(((byte)(61)))));
             this.ClientSize = new System.Drawing.Size(844, 492);
             this.Controls.Add(this.cboxTemporada);
-            this.Controls.Add(this.cbox_subitpoProd);
+            this.Controls.Add(this.cbox_subtipoProd);
             this.Controls.Add(this.lbl_subtipo);
             this.Controls.Add(this.cBox_TipoProd);
             this.Controls.Add(this.lbl_Tipo);
@@ -248,6 +258,7 @@ namespace Presentacion
             this.Controls.Add(this.panel1);
             this.Name = "ProductosListado";
             this.Text = "ProductosListado";
+            this.Load += new System.EventHandler(this.ProductosListado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ListProductos)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -257,8 +268,6 @@ namespace Presentacion
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox cbox_subitpoProd;
         public System.Windows.Forms.Label lbl_subtipo;
         private System.Windows.Forms.ComboBox cBox_TipoProd;
         public System.Windows.Forms.Label lbl_Tipo;
@@ -273,5 +282,6 @@ namespace Presentacion
         private System.Windows.Forms.Label lbl_TitProvList;
         private System.Windows.Forms.Button btn_CerrarUsuAlta;
         private System.Windows.Forms.ComboBox cboxTemporada;
+        public System.Windows.Forms.ComboBox cbox_subtipoProd;
     }
 }

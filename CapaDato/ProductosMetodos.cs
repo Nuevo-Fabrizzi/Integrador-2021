@@ -74,9 +74,9 @@ namespace Capa_Datos
 
             return dt;
         }
-        public DataTable ConsultarProductoSubtipo()
+        public DataTable ConsultarProductoSubtipo(Producto prod_Tipo,Producto prod_subTipo)
         {
-            var sqlStr = "select * from Productos";
+            var sqlStr = "select * from Productos where prod_Tipo ='" + prod_Tipo + "'and prod_subtipo ='" + prod_subTipo + "'";
             var da = new SqlDataAdapter(sqlStr, conectar());
             var ds = new DataSet();
             da.Fill(ds);

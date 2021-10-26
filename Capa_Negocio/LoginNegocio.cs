@@ -29,6 +29,17 @@ namespace Capa_Negocio
         {
             return objLoginMetodo.consultaNombre(usu);
         }
+
+        public Boolean CambiarPass(int legajo, string pass)
+        {
+            Boolean result = objLoginMetodo.CambiarPass(legajo, pass);
+            return result;
+        }
+
+        public DataTable consultaExisteLegajo(int legajo)
+        {
+            return objLoginMetodo.consultaExisteLegajo(legajo);
+        }
     }
 
     
