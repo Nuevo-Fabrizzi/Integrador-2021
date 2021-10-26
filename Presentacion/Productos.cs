@@ -227,9 +227,9 @@ namespace Presentacion
                         cbox_SubtipoProd.Items.Add("Ambo");
                         cbox_SubtipoProd.Items.Add("Saco");
                         cbox_SubtipoProd.SelectedIndex = 0;
-                        
+
                         break;
-                        //cmbUbiDepo.Items.Add("PB-Perchero 2"); break;
+                    //cmbUbiDepo.Items.Add("PB-Perchero 2"); break;
                     case 12://Sweaters
                         cbox_SubtipoProd.Items.Clear();
                         cbox_SubtipoProd.Items.Add("Seleccione");
@@ -266,6 +266,7 @@ namespace Presentacion
 
         private void cmbTalle_SelectedIndexChanged(object sender, EventArgs e)
         {
+
             int ta = cBox_Talle.SelectedIndex;
 
             switch (ta)
@@ -296,13 +297,10 @@ namespace Presentacion
                     break;
                 default:
                     break;
+                    //>>>>>>> aae03be54716e6e6b02ea55d2438c97a21105109
 
+                    //}
             }
-        }
-
-        private void cmbUbiDepo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void CargarNuevoArt_Click(object sender, EventArgs e)
@@ -332,7 +330,7 @@ namespace Presentacion
                     MessageBox.Show("Debe Seleccionar un talle para el producto!", "Seleccione Talle");
                 }
             }
-            if (cBox_Temporada.SelectedItem.ToString()== "Primavera-Verano")
+            if (cBox_Temporada.SelectedItem.ToString() == "Primavera-Verano")
             {
                 temporada = "V";
             }
@@ -340,9 +338,8 @@ namespace Presentacion
             {
                 temporada = "I";
             }
-             
-            
+
+
 
         }
-    }
-}
+    } }
