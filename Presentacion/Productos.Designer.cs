@@ -42,19 +42,19 @@ namespace Presentacion
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_TitProv = new System.Windows.Forms.Label();
             this.btn_CerrarUsuAlta = new System.Windows.Forms.Button();
-            this.cmbTalle = new System.Windows.Forms.ComboBox();
+            this.cBox_Talle = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtCantidadProd = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.cmbUbiDepo = new System.Windows.Forms.ComboBox();
-            this.cmbEstado = new System.Windows.Forms.ComboBox();
+            this.cBox_UbiDepo = new System.Windows.Forms.ComboBox();
+            this.cBox_Estado = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.cmbTeporada = new System.Windows.Forms.ComboBox();
+            this.cBox_Temporada = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.cmbEstantePerchero = new System.Windows.Forms.ComboBox();
+            this.cBox_EstantePerchero = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cBox_Color = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -141,7 +141,7 @@ namespace Presentacion
             // 
             // tBox_Desc
             // 
-            this.tBox_Desc.Location = new System.Drawing.Point(542, 138);
+            this.tBox_Desc.Location = new System.Drawing.Point(559, 110);
             this.tBox_Desc.Name = "tBox_Desc";
             this.tBox_Desc.Size = new System.Drawing.Size(229, 20);
             this.tBox_Desc.TabIndex = 96;
@@ -158,7 +158,7 @@ namespace Presentacion
             this.lbl_Desc.AutoSize = true;
             this.lbl_Desc.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold);
             this.lbl_Desc.ForeColor = System.Drawing.Color.Cornsilk;
-            this.lbl_Desc.Location = new System.Drawing.Point(434, 141);
+            this.lbl_Desc.Location = new System.Drawing.Point(437, 110);
             this.lbl_Desc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Desc.Name = "lbl_Desc";
             this.lbl_Desc.Size = new System.Drawing.Size(91, 17);
@@ -212,10 +212,10 @@ namespace Presentacion
             this.btn_CerrarUsuAlta.UseVisualStyleBackColor = false;
             this.btn_CerrarUsuAlta.Click += new System.EventHandler(this.btn_CerrarUsuAlta_Click);
             // 
-            // cmbTalle
+            // cBox_Talle
             // 
-            this.cmbTalle.FormattingEnabled = true;
-            this.cmbTalle.Items.AddRange(new object[] {
+            this.cBox_Talle.FormattingEnabled = true;
+            this.cBox_Talle.Items.AddRange(new object[] {
             "Seleccione",
             "36",
             "38",
@@ -225,11 +225,11 @@ namespace Presentacion
             "46",
             "48",
             "50"});
-            this.cmbTalle.Location = new System.Drawing.Point(179, 267);
-            this.cmbTalle.Name = "cmbTalle";
-            this.cmbTalle.Size = new System.Drawing.Size(195, 21);
-            this.cmbTalle.TabIndex = 107;
-            this.cmbTalle.SelectedIndexChanged += new System.EventHandler(this.cmbTalle_SelectedIndexChanged);
+            this.cBox_Talle.Location = new System.Drawing.Point(179, 267);
+            this.cBox_Talle.Name = "cBox_Talle";
+            this.cBox_Talle.Size = new System.Drawing.Size(195, 21);
+            this.cBox_Talle.TabIndex = 107;
+            this.cBox_Talle.SelectedIndexChanged += new System.EventHandler(this.cmbTalle_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -248,7 +248,7 @@ namespace Presentacion
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.Cornsilk;
-            this.label2.Location = new System.Drawing.Point(421, 187);
+            this.label2.Location = new System.Drawing.Point(437, 148);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(165, 17);
@@ -274,29 +274,29 @@ namespace Presentacion
             this.label3.TabIndex = 109;
             this.label3.Text = "Cantidad";
             // 
-            // cmbUbiDepo
+            // cBox_UbiDepo
             // 
-            this.cmbUbiDepo.FormattingEnabled = true;
-            this.cmbUbiDepo.Location = new System.Drawing.Point(593, 187);
-            this.cmbUbiDepo.Name = "cmbUbiDepo";
-            this.cmbUbiDepo.Size = new System.Drawing.Size(195, 21);
-            this.cmbUbiDepo.TabIndex = 111;
-            this.cmbUbiDepo.SelectedIndexChanged += new System.EventHandler(this.cmbUbiDepo_SelectedIndexChanged);
+            this.cBox_UbiDepo.FormattingEnabled = true;
+            this.cBox_UbiDepo.Location = new System.Drawing.Point(618, 148);
+            this.cBox_UbiDepo.Name = "cBox_UbiDepo";
+            this.cBox_UbiDepo.Size = new System.Drawing.Size(170, 21);
+            this.cBox_UbiDepo.TabIndex = 111;
+            this.cBox_UbiDepo.SelectedIndexChanged += new System.EventHandler(this.cmbUbiDepo_SelectedIndexChanged);
             // 
-            // cmbEstado
+            // cBox_Estado
             // 
-            this.cmbEstado.FormattingEnabled = true;
-            this.cmbEstado.Items.AddRange(new object[] {
+            this.cBox_Estado.FormattingEnabled = true;
+            this.cBox_Estado.Items.AddRange(new object[] {
             "Seleccione",
             "Outlet",
             "Venta",
             "",
             "",
             ""});
-            this.cmbEstado.Location = new System.Drawing.Point(179, 144);
-            this.cmbEstado.Name = "cmbEstado";
-            this.cmbEstado.Size = new System.Drawing.Size(195, 21);
-            this.cmbEstado.TabIndex = 115;
+            this.cBox_Estado.Location = new System.Drawing.Point(179, 144);
+            this.cBox_Estado.Name = "cBox_Estado";
+            this.cBox_Estado.Size = new System.Drawing.Size(195, 21);
+            this.cBox_Estado.TabIndex = 115;
             // 
             // label5
             // 
@@ -310,17 +310,17 @@ namespace Presentacion
             this.label5.TabIndex = 114;
             this.label5.Text = "Estado";
             // 
-            // cmbTeporada
+            // cBox_Temporada
             // 
-            this.cmbTeporada.FormattingEnabled = true;
-            this.cmbTeporada.Items.AddRange(new object[] {
+            this.cBox_Temporada.FormattingEnabled = true;
+            this.cBox_Temporada.Items.AddRange(new object[] {
             "Seleccione",
             "Primavera-Verano",
             "Otoño-Invierno"});
-            this.cmbTeporada.Location = new System.Drawing.Point(179, 309);
-            this.cmbTeporada.Name = "cmbTeporada";
-            this.cmbTeporada.Size = new System.Drawing.Size(195, 21);
-            this.cmbTeporada.TabIndex = 117;
+            this.cBox_Temporada.Location = new System.Drawing.Point(179, 309);
+            this.cBox_Temporada.Name = "cBox_Temporada";
+            this.cBox_Temporada.Size = new System.Drawing.Size(195, 21);
+            this.cBox_Temporada.TabIndex = 117;
             // 
             // label6
             // 
@@ -334,37 +334,37 @@ namespace Presentacion
             this.label6.TabIndex = 116;
             this.label6.Text = "Temporada";
             // 
-            // cmbEstantePerchero
+            // cBox_EstantePerchero
             // 
-            this.cmbEstantePerchero.FormattingEnabled = true;
-            this.cmbEstantePerchero.Items.AddRange(new object[] {
+            this.cBox_EstantePerchero.FormattingEnabled = true;
+            this.cBox_EstantePerchero.Items.AddRange(new object[] {
             "Seleccione",
             "Nivel 1",
             "Nivel 2",
             "Nivel 3",
             "Nivel 4",
             "Nivel 5"});
-            this.cmbEstantePerchero.Location = new System.Drawing.Point(593, 219);
-            this.cmbEstantePerchero.Name = "cmbEstantePerchero";
-            this.cmbEstantePerchero.Size = new System.Drawing.Size(195, 21);
-            this.cmbEstantePerchero.TabIndex = 119;
+            this.cBox_EstantePerchero.Location = new System.Drawing.Point(559, 185);
+            this.cBox_EstantePerchero.Name = "cBox_EstantePerchero";
+            this.cBox_EstantePerchero.Size = new System.Drawing.Size(195, 21);
+            this.cBox_EstantePerchero.TabIndex = 119;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.Cornsilk;
-            this.label4.Location = new System.Drawing.Point(421, 223);
+            this.label4.Location = new System.Drawing.Point(437, 185);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(136, 17);
+            this.label4.Size = new System.Drawing.Size(46, 17);
             this.label4.TabIndex = 118;
-            this.label4.Text = "Estante o Perchero";
+            this.label4.Text = "Nivel:";
             // 
-            // comboBox1
+            // cBox_Color
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cBox_Color.FormattingEnabled = true;
+            this.cBox_Color.Items.AddRange(new object[] {
             "Seleccione",
             "01-Azul",
             "02-Azul Francia",
@@ -381,10 +381,10 @@ namespace Presentacion
             "13-Rojo",
             "14-Rosa",
             "15-Salmon"});
-            this.comboBox1.Location = new System.Drawing.Point(179, 394);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(195, 21);
-            this.comboBox1.TabIndex = 121;
+            this.cBox_Color.Location = new System.Drawing.Point(179, 394);
+            this.cBox_Color.Name = "cBox_Color";
+            this.cBox_Color.Size = new System.Drawing.Size(195, 21);
+            this.cBox_Color.TabIndex = 121;
             // 
             // label7
             // 
@@ -404,19 +404,19 @@ namespace Presentacion
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(50)))), ((int)(((byte)(61)))));
             this.ClientSize = new System.Drawing.Size(844, 492);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cBox_Color);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.cmbEstantePerchero);
+            this.Controls.Add(this.cBox_EstantePerchero);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.cmbTeporada);
+            this.Controls.Add(this.cBox_Temporada);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.cmbEstado);
+            this.Controls.Add(this.cBox_Estado);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.cmbUbiDepo);
+            this.Controls.Add(this.cBox_UbiDepo);
             this.Controls.Add(this.txtCantidadProd);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.cmbTalle);
+            this.Controls.Add(this.cBox_Talle);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbox_SubtipoProd);
             this.Controls.Add(this.lbl_subtipo);
@@ -454,19 +454,19 @@ namespace Presentacion
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbl_TitProv;
         private System.Windows.Forms.Button btn_CerrarUsuAlta;
-        private System.Windows.Forms.ComboBox cmbTalle;
+        private System.Windows.Forms.ComboBox cBox_Talle;
         public System.Windows.Forms.Label label1;
         public System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtCantidadProd;
         public System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox cmbUbiDepo;
-        private System.Windows.Forms.ComboBox cmbEstado;
+        private System.Windows.Forms.ComboBox cBox_UbiDepo;
+        private System.Windows.Forms.ComboBox cBox_Estado;
         public System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox cmbTeporada;
+        private System.Windows.Forms.ComboBox cBox_Temporada;
         public System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox cmbEstantePerchero;
+        private System.Windows.Forms.ComboBox cBox_EstantePerchero;
         public System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cBox_Color;
         public System.Windows.Forms.Label label7;
     }
 }

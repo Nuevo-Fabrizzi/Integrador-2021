@@ -42,6 +42,7 @@
             // 
             // TextBox_User
             // 
+            this.TextBox_User.ForeColor = System.Drawing.Color.Black;
             this.TextBox_User.Location = new System.Drawing.Point(186, 124);
             this.TextBox_User.Name = "TextBox_User";
             this.TextBox_User.Size = new System.Drawing.Size(129, 20);

@@ -19,9 +19,9 @@ namespace Presentacion
 
 
             int tipoProd = cBox_TipoProd.SelectedIndex;
-            if (cmbEstado.SelectedItem.ToString() == "Outlet")
+            if (cBox_Estado.SelectedItem.ToString() == "Outlet")
             {
-                cmbUbiDepo.Items.Add("PA-Estante 5");
+                cBox_UbiDepo.Items.Add("PA-Estante 5");
                 switch (tipoProd)
                 {
                     case 1://abrigos
@@ -136,7 +136,7 @@ namespace Presentacion
                         cbox_SubtipoProd.Items.Add("Gaban");
                         cbox_SubtipoProd.Items.Add("Montgomery");
                         cbox_SubtipoProd.SelectedIndex = 0;
-                        cmbUbiDepo.Items.Add("PB-Perchero 1");
+                        cBox_UbiDepo.Items.Add("PB-Perchero 1");
                         break;
                     case 2://accesosrios
                         cbox_SubtipoProd.Items.Clear();
@@ -150,12 +150,12 @@ namespace Presentacion
                         cbox_SubtipoProd.Items.Add("Tiradores");
                         cbox_SubtipoProd.Items.Add("Traba corbata");
                         cbox_SubtipoProd.SelectedIndex = 0;
-                        cmbUbiDepo.Items.Add("PA-Estante 4");
+                        cBox_UbiDepo.Items.Add("PA-Estante 4");
                         break;
                     case 3: //Ambo
                         cbox_SubtipoProd.Enabled = true;
-                        cmbUbiDepo.Items.Clear();
-                        cmbUbiDepo.Items.Add("PB-Perchero 3");
+                        cBox_UbiDepo.Items.Clear();
+                        cBox_UbiDepo.Items.Add("PB-Perchero 3");
                         break;
 
                     case 4://calzado
@@ -165,7 +165,7 @@ namespace Presentacion
                         cbox_SubtipoProd.Items.Add("Vestir c/cordones");
                         cbox_SubtipoProd.Items.Add("Vestir s/cordones");
                         cbox_SubtipoProd.SelectedIndex = 0;
-                        cmbUbiDepo.Items.Add("PA-Estante 4");
+                        cBox_UbiDepo.Items.Add("PA-Estante 4");
                         break;
                     case 5://camisas manga corta
                         cbox_SubtipoProd.Items.Clear();
@@ -173,7 +173,7 @@ namespace Presentacion
                         cbox_SubtipoProd.Items.Add("Fantasia");
                         cbox_SubtipoProd.Items.Add("Vestir");
                         cbox_SubtipoProd.SelectedIndex = 0;
-                        cmbUbiDepo.Items.Add("PA-Estante 3");
+                        cBox_UbiDepo.Items.Add("PA-Estante 3");
                         break;
                     case 6://camisas manga larga
                         cbox_SubtipoProd.Items.Clear();
@@ -181,7 +181,7 @@ namespace Presentacion
                         cbox_SubtipoProd.Items.Add("Fantasia");
                         cbox_SubtipoProd.Items.Add("Vestir");
                         cbox_SubtipoProd.SelectedIndex = 0;
-                        cmbUbiDepo.Items.Add("PA-Estante 2");
+                        cBox_UbiDepo.Items.Add("PA-Estante 2");
                         break;
                     case 7://camperas
                         cbox_SubtipoProd.Items.Clear();
@@ -190,7 +190,7 @@ namespace Presentacion
                         cbox_SubtipoProd.Items.Add("Inflables");
                         cbox_SubtipoProd.Items.Add("Parkas");
                         cbox_SubtipoProd.SelectedIndex = 0;
-                        cmbUbiDepo.Items.Add("PB-Perchero 1");
+                        cBox_UbiDepo.Items.Add("PB-Perchero 1");
                         break;
                     case 8://pantalon corto
                         cbox_SubtipoProd.Items.Clear();
@@ -200,7 +200,7 @@ namespace Presentacion
                         cbox_SubtipoProd.Items.Add("Jogging");
                         cbox_SubtipoProd.Items.Add("Malla");
                         cbox_SubtipoProd.SelectedIndex = 0;
-                        cmbUbiDepo.Items.Add("PB-Estante 2");
+                        cBox_UbiDepo.Items.Add("PB-Estante 2");
                         break;
                     case 9://pantalon largo
                         cbox_SubtipoProd.Items.Clear();
@@ -210,7 +210,7 @@ namespace Presentacion
                         cbox_SubtipoProd.Items.Add("Jogging");
                         cbox_SubtipoProd.Items.Add("Malla");
                         cbox_SubtipoProd.SelectedIndex = 0;
-                        cmbUbiDepo.Items.Add("PB-Estante 2");
+                        cBox_UbiDepo.Items.Add("PB-Estante 2");
                         break;
                     case 10://remera
                         cbox_SubtipoProd.Items.Clear();
@@ -218,7 +218,7 @@ namespace Presentacion
                         cbox_SubtipoProd.Items.Add("Cuello Base");
                         cbox_SubtipoProd.Items.Add("Cuello pique");
                         cbox_SubtipoProd.SelectedIndex = 0;
-                        cmbUbiDepo.Items.Add("PA-Estante 3");
+                        cBox_UbiDepo.Items.Add("PA-Estante 3");
                         break;
 
                     case 11:
@@ -238,7 +238,7 @@ namespace Presentacion
                         cbox_SubtipoProd.Items.Add("Cuello redondo Algodon");
                         cbox_SubtipoProd.Items.Add("Cuello redondo Bremer");
                         cbox_SubtipoProd.SelectedIndex = 0;
-                        cmbUbiDepo.Items.Add("PB-Estante 1");
+                        cBox_UbiDepo.Items.Add("PB-Estante 1");
                         break;
                     default:
                         break;
@@ -256,38 +256,43 @@ namespace Presentacion
 
         private void Productos_Load(object sender, EventArgs e)
         {
-
+            cBox_Estado.SelectedIndex = 0;
+            cBox_TipoProd.SelectedIndex = 0;
+            cBox_Talle.SelectedIndex = 0;
+            cBox_Temporada.SelectedIndex = 0;
+            cBox_Color.SelectedIndex = 0;
+            cBox_EstantePerchero.SelectedIndex = 0;
         }
 
         private void cmbTalle_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int ta = cmbTalle.SelectedIndex;
+            int ta = cBox_Talle.SelectedIndex;
 
             switch (ta)
             {
                 case 1:
-                    cmbTalle.Items.Add("36");
+                    cBox_Talle.Items.Add("36");
                     break;
                 case 2:
-                    cmbTalle.Items.Add("38");
+                    cBox_Talle.Items.Add("38");
                     break;
                 case 3:
-                    cmbTalle.Items.Add("40");
+                    cBox_Talle.Items.Add("40");
                     break;
                 case 4:
-                    cmbTalle.Items.Add("42");
+                    cBox_Talle.Items.Add("42");
                     break;
                 case 5:
-                    cmbTalle.Items.Add("44");
+                    cBox_Talle.Items.Add("44");
                     break;
                 case 6:
-                    cmbTalle.Items.Add("46");
+                    cBox_Talle.Items.Add("46");
                     break;
                 case 7:
-                    cmbTalle.Items.Add("48");
+                    cBox_Talle.Items.Add("48");
                     break;
                 case 8:
-                    cmbTalle.Items.Add("50");
+                    cBox_Talle.Items.Add("50");
                     break;
                 default:
                     break;
@@ -316,7 +321,7 @@ namespace Presentacion
 
             if ((resp == DialogResult.Yes))
             {
-                prodEnt.prod_Talle = cmbTalle.Text;
+                prodEnt.prod_Talle = cBox_Talle.Text;
 
                 if (cBox_TipoProd.SelectedItem.ToString() == "Accesorios")
                 {
@@ -327,7 +332,7 @@ namespace Presentacion
                     MessageBox.Show("Debe Seleccionar un talle para el producto!", "Seleccione Talle");
                 }
             }
-            if (cmbTeporada.SelectedItem.ToString()== "Primavera-Verano")
+            if (cBox_Temporada.SelectedItem.ToString()== "Primavera-Verano")
             {
                 temporada = "V";
             }
