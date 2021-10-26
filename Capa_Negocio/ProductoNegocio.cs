@@ -23,14 +23,11 @@ namespace Capa_Negocio
             return objProdMetodos.ConsultarProducto();
         }
 
-        public DataTable ConsultarProductoTemporada(Producto prod_CodDeProd)
+        public DataTable ConsultarProductoTipo(Producto prod_Tipo)
         {
-            return objProdMetodos.ConsultarProductoTemporada(prod_CodDeProd);
+            return objProdMetodos.ConsultarProductoTipo(prod_Tipo);
         }
 
-        public DataTable ConsultarProductoSubtipo(Producto prod_Tipo, Producto prod_subTipo)
-        {
-            return objProdMetodos.ConsultarProductoSubtipo(prod_Tipo, prod_subTipo);
-        }
+      
     }
 }

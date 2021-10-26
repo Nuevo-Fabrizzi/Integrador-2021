@@ -281,7 +281,7 @@ namespace Presentacion
             this.cBox_UbiDepo.Name = "cBox_UbiDepo";
             this.cBox_UbiDepo.Size = new System.Drawing.Size(170, 21);
             this.cBox_UbiDepo.TabIndex = 111;
-            this.cBox_UbiDepo.SelectedIndexChanged += new System.EventHandler(this.cmbUbiDepo_SelectedIndexChanged);
+          //  this.cBox_UbiDepo.SelectedIndexChanged += new System.EventHandler(this.cmbUbiDepo_SelectedIndexChanged);
             // 
             // cBox_Estado
             // 

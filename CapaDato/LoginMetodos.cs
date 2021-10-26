@@ -58,7 +58,7 @@ namespace Capa_Datos
                 return true;
             }
 
-            catch (Exception ex)
+            catch (Exception)
 
             {
                 return false;

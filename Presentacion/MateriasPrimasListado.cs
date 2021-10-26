@@ -15,6 +15,7 @@ namespace Presentacion
         public String cuitProv = "";
         private void MateriasPrimasListado_Load(object sender, EventArgs e)
         {
+            //************para llenar el combobox
             var ProvMet = new ProveedorNegocio();
             var dt2 = new DataTable();
             dt2= ProvMet.ConsultarRZProv();
@@ -28,7 +29,7 @@ namespace Presentacion
                 cBox_ProveedorBuscar.DisplayMember = "RzProv";
                 cBox_ProveedorBuscar.ValueMember = "cuit";
             }
-
+            //************************para llenar el dgv cuando carga
             var ds = new DataSet();
             var dt = new DataTable();
             var MatPriMet = new MateriaPrimaNegocio();

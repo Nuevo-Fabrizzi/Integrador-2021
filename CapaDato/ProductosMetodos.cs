@@ -51,32 +51,14 @@ namespace Capa_Datos
 
             return dt;
         }
+       
 
-        public DataTable ConsultarProductoTemporada(Producto prod_CodDeProd)
-        {
-            var sqlStr = "select * from Productos where prod_CodDeProd like '"+ prod_CodDeProd + "%'";
-            var da = new SqlDataAdapter(sqlStr, conectar());
-            var ds = new DataSet();
-            da.Fill(ds);
-            DataTable dt = ds.Tables[0];
-
-            return dt;
-        }
-
+    
        // select* from Productos where prod_CodDeProd like 'I%'
-        public DataTable ConsultarProductoTipo()
+       
+        public DataTable ConsultarProductoTipo(Producto prod_Tipo)
         {
-            var sqlStr = "select * from Productos";
-            var da = new SqlDataAdapter(sqlStr, conectar());
-            var ds = new DataSet();
-            da.Fill(ds);
-            DataTable dt = ds.Tables[0];
-
-            return dt;
-        }
-        public DataTable ConsultarProductoSubtipo(Producto prod_Tipo,Producto prod_subTipo)
-        {
-            var sqlStr = "select * from Productos where prod_Tipo ='" + prod_Tipo + "'and prod_subtipo ='" + prod_subTipo + "'";
+            var sqlStr = "select * from Productos where prod_Tipo ='" + prod_Tipo + "%'";
             var da = new SqlDataAdapter(sqlStr, conectar());
             var ds = new DataSet();
             da.Fill(ds);

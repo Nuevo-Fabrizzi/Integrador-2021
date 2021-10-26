@@ -29,8 +29,6 @@ namespace Presentacion
         /// </summary>
         private void InitializeComponent()
         {
-            this.cbox_subtipoProd = new System.Windows.Forms.ComboBox();
-            this.lbl_subtipo = new System.Windows.Forms.Label();
             this.cBox_TipoProd = new System.Windows.Forms.ComboBox();
             this.lbl_Tipo = new System.Windows.Forms.Label();
             this.btn_BajaProd = new System.Windows.Forms.Button();
@@ -38,36 +36,13 @@ namespace Presentacion
             this.btn_ImprimirProv = new System.Windows.Forms.Button();
             this.btn_NuevoProv = new System.Windows.Forms.Button();
             this.btn_BuscarProducto = new System.Windows.Forms.Button();
-            this.lbl_RazonSocial = new System.Windows.Forms.Label();
             this.dgv_ListProductos = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_TitProvList = new System.Windows.Forms.Label();
             this.btn_CerrarUsuAlta = new System.Windows.Forms.Button();
-            this.cboxTemporada = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ListProductos)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // cbox_subtipoProd
-            // 
-            this.cbox_subtipoProd.FormattingEnabled = true;
-            this.cbox_subtipoProd.Location = new System.Drawing.Point(418, 165);
-            this.cbox_subtipoProd.Name = "cbox_subtipoProd";
-            this.cbox_subtipoProd.Size = new System.Drawing.Size(195, 21);
-            this.cbox_subtipoProd.TabIndex = 108;
-            this.cbox_subtipoProd.SelectedIndexChanged += new System.EventHandler(this.cbox_subitpoProd_SelectedIndexChanged);
-            // 
-            // lbl_subtipo
-            // 
-            this.lbl_subtipo.AutoSize = true;
-            this.lbl_subtipo.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lbl_subtipo.ForeColor = System.Drawing.Color.Cornsilk;
-            this.lbl_subtipo.Location = new System.Drawing.Point(347, 165);
-            this.lbl_subtipo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl_subtipo.Name = "lbl_subtipo";
-            this.lbl_subtipo.Size = new System.Drawing.Size(64, 17);
-            this.lbl_subtipo.TabIndex = 107;
-            this.lbl_subtipo.Text = "Subtipo:";
             // 
             // cBox_TipoProd
             // 
@@ -86,7 +61,7 @@ namespace Presentacion
             "Remeras",
             "Sastreria",
             "Sweaters"});
-            this.cBox_TipoProd.Location = new System.Drawing.Point(101, 165);
+            this.cBox_TipoProd.Location = new System.Drawing.Point(165, 121);
             this.cBox_TipoProd.Name = "cBox_TipoProd";
             this.cBox_TipoProd.Size = new System.Drawing.Size(195, 21);
             this.cBox_TipoProd.TabIndex = 106;
@@ -97,7 +72,7 @@ namespace Presentacion
             this.lbl_Tipo.AutoSize = true;
             this.lbl_Tipo.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold);
             this.lbl_Tipo.ForeColor = System.Drawing.Color.Cornsilk;
-            this.lbl_Tipo.Location = new System.Drawing.Point(42, 165);
+            this.lbl_Tipo.Location = new System.Drawing.Point(95, 125);
             this.lbl_Tipo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Tipo.Name = "lbl_Tipo";
             this.lbl_Tipo.Size = new System.Drawing.Size(42, 17);
@@ -158,7 +133,7 @@ namespace Presentacion
             this.btn_BuscarProducto.BackColor = System.Drawing.Color.SeaGreen;
             this.btn_BuscarProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_BuscarProducto.ForeColor = System.Drawing.Color.White;
-            this.btn_BuscarProducto.Location = new System.Drawing.Point(574, 103);
+            this.btn_BuscarProducto.Location = new System.Drawing.Point(496, 103);
             this.btn_BuscarProducto.Name = "btn_BuscarProducto";
             this.btn_BuscarProducto.Size = new System.Drawing.Size(140, 39);
             this.btn_BuscarProducto.TabIndex = 99;
@@ -166,28 +141,17 @@ namespace Presentacion
             this.btn_BuscarProducto.UseVisualStyleBackColor = false;
             this.btn_BuscarProducto.Click += new System.EventHandler(this.btn_BuscarProducto_Click);
             // 
-            // lbl_RazonSocial
-            // 
-            this.lbl_RazonSocial.AutoSize = true;
-            this.lbl_RazonSocial.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lbl_RazonSocial.ForeColor = System.Drawing.Color.White;
-            this.lbl_RazonSocial.Location = new System.Drawing.Point(42, 114);
-            this.lbl_RazonSocial.Name = "lbl_RazonSocial";
-            this.lbl_RazonSocial.Size = new System.Drawing.Size(69, 17);
-            this.lbl_RazonSocial.TabIndex = 98;
-            this.lbl_RazonSocial.Text = "Producto";
-            // 
             // dgv_ListProductos
             // 
             this.dgv_ListProductos.AllowUserToAddRows = false;
             this.dgv_ListProductos.AllowUserToDeleteRows = false;
             this.dgv_ListProductos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_ListProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_ListProductos.Location = new System.Drawing.Point(25, 233);
+            this.dgv_ListProductos.Location = new System.Drawing.Point(25, 170);
             this.dgv_ListProductos.Name = "dgv_ListProductos";
             this.dgv_ListProductos.ReadOnly = true;
             this.dgv_ListProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_ListProductos.Size = new System.Drawing.Size(777, 154);
+            this.dgv_ListProductos.Size = new System.Drawing.Size(777, 217);
             this.dgv_ListProductos.TabIndex = 97;
             this.dgv_ListProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_ListProductos_CellContentClick);
             // 
@@ -224,18 +188,7 @@ namespace Presentacion
             this.btn_CerrarUsuAlta.TabIndex = 65;
             this.btn_CerrarUsuAlta.Text = "X";
             this.btn_CerrarUsuAlta.UseVisualStyleBackColor = false;
-            // 
-            // cboxTemporada
-            // 
-            this.cboxTemporada.FormattingEnabled = true;
-            this.cboxTemporada.Items.AddRange(new object[] {
-            "Seleccione",
-            "Otoño-Invierno",
-            "Primavera-Verano"});
-            this.cboxTemporada.Location = new System.Drawing.Point(138, 114);
-            this.cboxTemporada.Name = "cboxTemporada";
-            this.cboxTemporada.Size = new System.Drawing.Size(231, 21);
-            this.cboxTemporada.TabIndex = 109;
+            this.btn_CerrarUsuAlta.Click += new System.EventHandler(this.btn_CerrarUsuAlta_Click);
             // 
             // ProductosListado
             // 
@@ -243,9 +196,6 @@ namespace Presentacion
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(50)))), ((int)(((byte)(61)))));
             this.ClientSize = new System.Drawing.Size(844, 492);
-            this.Controls.Add(this.cboxTemporada);
-            this.Controls.Add(this.cbox_subtipoProd);
-            this.Controls.Add(this.lbl_subtipo);
             this.Controls.Add(this.cBox_TipoProd);
             this.Controls.Add(this.lbl_Tipo);
             this.Controls.Add(this.btn_BajaProd);
@@ -253,7 +203,6 @@ namespace Presentacion
             this.Controls.Add(this.btn_ImprimirProv);
             this.Controls.Add(this.btn_NuevoProv);
             this.Controls.Add(this.btn_BuscarProducto);
-            this.Controls.Add(this.lbl_RazonSocial);
             this.Controls.Add(this.dgv_ListProductos);
             this.Controls.Add(this.panel1);
             this.Name = "ProductosListado";
@@ -268,7 +217,6 @@ namespace Presentacion
         }
 
         #endregion
-        public System.Windows.Forms.Label lbl_subtipo;
         private System.Windows.Forms.ComboBox cBox_TipoProd;
         public System.Windows.Forms.Label lbl_Tipo;
         public System.Windows.Forms.Button btn_BajaProd;
@@ -276,12 +224,9 @@ namespace Presentacion
         private System.Windows.Forms.Button btn_ImprimirProv;
         private System.Windows.Forms.Button btn_NuevoProv;
         private System.Windows.Forms.Button btn_BuscarProducto;
-        public System.Windows.Forms.Label lbl_RazonSocial;
         private System.Windows.Forms.DataGridView dgv_ListProductos;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbl_TitProvList;
         private System.Windows.Forms.Button btn_CerrarUsuAlta;
-        private System.Windows.Forms.ComboBox cboxTemporada;
-        public System.Windows.Forms.ComboBox cbox_subtipoProd;
     }
 }
