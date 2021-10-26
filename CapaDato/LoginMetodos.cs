@@ -76,6 +76,18 @@ namespace Capa_Datos
             DataTable dt = da;
             return dt;
         }
+
+        public DataTable consultaPassAnterior(int legajo)
+        {
+
+            string sqlStr2 = "select usu_Contrasenia Pass from Usuarios where usu_Legajo = " + legajo + ";";
+
+            var dap = new SqlDataAdapter(sqlStr2, conectar());
+            var da = new DataTable();
+            dap.Fill(da);
+            DataTable dt = da;
+            return dt;
+        }
         //public Boolean grabarUsuario(LoginEn usu)
         //{
         //    try

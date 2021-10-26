@@ -40,6 +40,11 @@ namespace Capa_Negocio
         {
             return objLoginMetodo.consultaExisteLegajo(legajo);
         }
+
+        public DataTable consultaPassAnterior(int legajo)
+        {
+            return objLoginMetodo.consultaPassAnterior(legajo);
+        }
     }
 
     
