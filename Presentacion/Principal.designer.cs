@@ -43,6 +43,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_Locales = new System.Windows.Forms.Label();
             this.linkLbl_ConoceApp = new System.Windows.Forms.LinkLabel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,7 +52,7 @@
             this.lbl_usuarios.AutoSize = true;
             this.lbl_usuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_usuarios.ForeColor = System.Drawing.Color.White;
-            this.lbl_usuarios.Location = new System.Drawing.Point(16, 81);
+            this.lbl_usuarios.Location = new System.Drawing.Point(16, 62);
             this.lbl_usuarios.Name = "lbl_usuarios";
             this.lbl_usuarios.Size = new System.Drawing.Size(116, 29);
             this.lbl_usuarios.TabIndex = 2;
@@ -63,7 +64,7 @@
             this.lbl_Roles.AutoSize = true;
             this.lbl_Roles.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Roles.ForeColor = System.Drawing.Color.White;
-            this.lbl_Roles.Location = new System.Drawing.Point(16, 35);
+            this.lbl_Roles.Location = new System.Drawing.Point(16, 16);
             this.lbl_Roles.Name = "lbl_Roles";
             this.lbl_Roles.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lbl_Roles.Size = new System.Drawing.Size(81, 29);
@@ -76,7 +77,7 @@
             this.lbl_Proveedores.AutoSize = true;
             this.lbl_Proveedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Proveedores.ForeColor = System.Drawing.Color.White;
-            this.lbl_Proveedores.Location = new System.Drawing.Point(16, 337);
+            this.lbl_Proveedores.Location = new System.Drawing.Point(16, 301);
             this.lbl_Proveedores.Name = "lbl_Proveedores";
             this.lbl_Proveedores.Size = new System.Drawing.Size(163, 29);
             this.lbl_Proveedores.TabIndex = 4;
@@ -88,7 +89,7 @@
             this.lbl_MatPrimas.AutoSize = true;
             this.lbl_MatPrimas.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_MatPrimas.ForeColor = System.Drawing.Color.White;
-            this.lbl_MatPrimas.Location = new System.Drawing.Point(16, 193);
+            this.lbl_MatPrimas.Location = new System.Drawing.Point(16, 157);
             this.lbl_MatPrimas.Name = "lbl_MatPrimas";
             this.lbl_MatPrimas.Size = new System.Drawing.Size(201, 29);
             this.lbl_MatPrimas.TabIndex = 5;
@@ -100,7 +101,7 @@
             this.lbl_productos.AutoSize = true;
             this.lbl_productos.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_productos.ForeColor = System.Drawing.Color.White;
-            this.lbl_productos.Location = new System.Drawing.Point(16, 291);
+            this.lbl_productos.Location = new System.Drawing.Point(16, 255);
             this.lbl_productos.Name = "lbl_productos";
             this.lbl_productos.Size = new System.Drawing.Size(131, 29);
             this.lbl_productos.TabIndex = 6;
@@ -112,7 +113,7 @@
             this.lbl_Pedidos.AutoSize = true;
             this.lbl_Pedidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Pedidos.ForeColor = System.Drawing.Color.White;
-            this.lbl_Pedidos.Location = new System.Drawing.Point(16, 243);
+            this.lbl_Pedidos.Location = new System.Drawing.Point(16, 207);
             this.lbl_Pedidos.Name = "lbl_Pedidos";
             this.lbl_Pedidos.Size = new System.Drawing.Size(110, 29);
             this.lbl_Pedidos.TabIndex = 7;
@@ -156,7 +157,7 @@
             this.btn_CerrarLogin.BackColor = System.Drawing.Color.SeaGreen;
             this.btn_CerrarLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_CerrarLogin.ForeColor = System.Drawing.Color.White;
-            this.btn_CerrarLogin.Location = new System.Drawing.Point(21, 404);
+            this.btn_CerrarLogin.Location = new System.Drawing.Point(21, 410);
             this.btn_CerrarLogin.Name = "btn_CerrarLogin";
             this.btn_CerrarLogin.Size = new System.Drawing.Size(140, 39);
             this.btn_CerrarLogin.TabIndex = 23;
@@ -167,6 +168,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(50)))), ((int)(((byte)(61)))));
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lbl_Locales);
             this.panel1.Controls.Add(this.lbl_usuarios);
             this.panel1.Controls.Add(this.btn_CerrarLogin);
@@ -185,7 +187,7 @@
             this.lbl_Locales.AutoSize = true;
             this.lbl_Locales.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Locales.ForeColor = System.Drawing.Color.White;
-            this.lbl_Locales.Location = new System.Drawing.Point(16, 143);
+            this.lbl_Locales.Location = new System.Drawing.Point(16, 107);
             this.lbl_Locales.Name = "lbl_Locales";
             this.lbl_Locales.Size = new System.Drawing.Size(104, 29);
             this.lbl_Locales.TabIndex = 24;
@@ -202,6 +204,18 @@
             this.linkLbl_ConoceApp.TabIndex = 25;
             this.linkLbl_ConoceApp.TabStop = true;
             this.linkLbl_ConoceApp.Text = "Conoce más de la aplicación";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(16, 342);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(92, 29);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "Ventas";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // F_Principal
             // 
@@ -244,5 +258,6 @@
         private System.Windows.Forms.LinkLabel linkLbl_ConoceApp;
         public System.Windows.Forms.Label lbl_Roles;
         private System.Windows.Forms.Label lbl_Locales;
+        private System.Windows.Forms.Label label1;
     }
 }

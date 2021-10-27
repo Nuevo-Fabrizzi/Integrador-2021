@@ -151,6 +151,13 @@ namespace Presentacion
             }
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Ventas venta = new Ventas();
+            venta.Show();
+
+        }
+
         private void panel2_MouseMove(object sender, MouseEventArgs e)
         {
             if (m == 1)

@@ -53,7 +53,7 @@ namespace Presentacion
             this.label7 = new System.Windows.Forms.Label();
             this.Descripcion = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.btn_ImprimirVentas = new System.Windows.Forms.Button();
+            this.btn_NuevaVenta = new System.Windows.Forms.Button();
             this.Btn_GuardarVentaProductos = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVentas)).BeginInit();
@@ -136,8 +136,9 @@ namespace Presentacion
             this.txtCodProd.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtCodProd.Location = new System.Drawing.Point(36, 318);
             this.txtCodProd.Name = "txtCodProd";
-            this.txtCodProd.Size = new System.Drawing.Size(166, 20);
+            this.txtCodProd.Size = new System.Drawing.Size(245, 20);
             this.txtCodProd.TabIndex = 83;
+            this.txtCodProd.TextChanged += new System.EventHandler(this.txtCodProd_TextChanged);
             // 
             // textBox2
             // 
@@ -148,7 +149,7 @@ namespace Presentacion
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(287, 318);
+            this.textBox3.Location = new System.Drawing.Point(315, 318);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 85;
@@ -294,17 +295,18 @@ namespace Presentacion
             this.label9.TabIndex = 100;
             this.label9.Text = "Precio Final";
             // 
-            // btn_ImprimirVentas
+            // btn_NuevaVenta
             // 
-            this.btn_ImprimirVentas.BackColor = System.Drawing.Color.SeaGreen;
-            this.btn_ImprimirVentas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ImprimirVentas.ForeColor = System.Drawing.Color.White;
-            this.btn_ImprimirVentas.Location = new System.Drawing.Point(798, 161);
-            this.btn_ImprimirVentas.Name = "btn_ImprimirVentas";
-            this.btn_ImprimirVentas.Size = new System.Drawing.Size(140, 39);
-            this.btn_ImprimirVentas.TabIndex = 101;
-            this.btn_ImprimirVentas.Text = "Imprimir";
-            this.btn_ImprimirVentas.UseVisualStyleBackColor = false;
+            this.btn_NuevaVenta.BackColor = System.Drawing.Color.SeaGreen;
+            this.btn_NuevaVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_NuevaVenta.ForeColor = System.Drawing.Color.White;
+            this.btn_NuevaVenta.Location = new System.Drawing.Point(798, 161);
+            this.btn_NuevaVenta.Name = "btn_NuevaVenta";
+            this.btn_NuevaVenta.Size = new System.Drawing.Size(140, 39);
+            this.btn_NuevaVenta.TabIndex = 101;
+            this.btn_NuevaVenta.Text = "Nueva Venta";
+            this.btn_NuevaVenta.UseVisualStyleBackColor = false;
+            this.btn_NuevaVenta.Click += new System.EventHandler(this.btn_NuevaVenta_Click);
             // 
             // Btn_GuardarVentaProductos
             // 
@@ -325,7 +327,7 @@ namespace Presentacion
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(50)))), ((int)(((byte)(61)))));
             this.ClientSize = new System.Drawing.Size(956, 534);
             this.Controls.Add(this.Btn_GuardarVentaProductos);
-            this.Controls.Add(this.btn_ImprimirVentas);
+            this.Controls.Add(this.btn_NuevaVenta);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.Descripcion);
             this.Controls.Add(this.label7);
@@ -381,7 +383,7 @@ namespace Presentacion
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label Descripcion;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button btn_ImprimirVentas;
+        private System.Windows.Forms.Button btn_NuevaVenta;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label lbl;
         private System.Windows.Forms.Button Btn_GuardarVentaProductos;

@@ -36,9 +36,15 @@ namespace Capa_Datos
             }
         }
 
-        public DataTable ConsultarProductoTipo(Producto prod_Tipo)
+        public DataTable ConsultarProducto()
         {
-            throw new NotImplementedException();
+            var sqlStr = "select * from Productos;";
+            var da = new SqlDataAdapter(sqlStr, conectar());
+            var ds = new DataSet();
+            da.Fill(ds);
+            DataTable dt = ds.Tables[0];
+
+            return dt;
         }
 
         public DataTable ConsultarProdXTipo(Producto prod_Tipo)
@@ -51,7 +57,18 @@ namespace Capa_Datos
 
             return dt;
         }
+        //ver algun cambio
+        public DataTable CargarNuevaVenta()
+        {
 
+            var sqlStr = "select prod_CodDeProd as Codigo,prod_Tipo as tipo,prod_subtipo as Subtipo from Productos where prod_Tipo ='" + prod_Tipo + "';";
+            var da = new SqlDataAdapter(sqlStr, conectar());
+            var ds = new DataSet();
+            da.Fill(ds);
+            DataTable dt = ds.Tables[0];
+
+            return dt;
+        } 
     }
 }
 

@@ -18,14 +18,14 @@ namespace Capa_Negocio
             Boolean result = objProdMetodos.NuevoProducto(prod);
             return result;
         }
-        //public DataTable ConsultarProducto()
-        //{
-        //  //  return objProdMetodos.ConsultarProducto();
-        //}
-
-        public DataTable ConsultarProductoTipo(Producto prod_Tipo)
+        public DataTable ConsultarProducto()
         {
-            return objProdMetodos.ConsultarProductoTipo(prod_Tipo);
+              return objProdMetodos.ConsultarProducto();
+        }
+
+        public DataTable ConsultarProdXTipo(Producto prod_Tipo)
+        {
+            return objProdMetodos.ConsultarProdXTipo(prod_Tipo);
         }
 
       
