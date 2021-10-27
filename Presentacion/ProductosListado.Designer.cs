@@ -153,7 +153,7 @@ namespace Presentacion
             this.dgv_ListProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_ListProductos.Size = new System.Drawing.Size(777, 217);
             this.dgv_ListProductos.TabIndex = 97;
-            this.dgv_ListProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_ListProductos_CellContentClick);
+       //     this.dgv_ListProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_ListProductos_CellContentClick);
             // 
             // panel1
             // 
@@ -182,13 +182,13 @@ namespace Presentacion
             this.btn_CerrarUsuAlta.BackColor = System.Drawing.Color.SeaGreen;
             this.btn_CerrarUsuAlta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.btn_CerrarUsuAlta.ForeColor = System.Drawing.Color.White;
-            this.btn_CerrarUsuAlta.Location = new System.Drawing.Point(774, 26);
+        //    this.btn_CerrarUsuAlta.Location = new System.Drawing.Point(774, 26);
             this.btn_CerrarUsuAlta.Name = "btn_CerrarUsuAlta";
             this.btn_CerrarUsuAlta.Size = new System.Drawing.Size(39, 23);
             this.btn_CerrarUsuAlta.TabIndex = 65;
             this.btn_CerrarUsuAlta.Text = "X";
             this.btn_CerrarUsuAlta.UseVisualStyleBackColor = false;
-            this.btn_CerrarUsuAlta.Click += new System.EventHandler(this.btn_CerrarUsuAlta_Click);
+      //      this.btn_CerrarUsuAlta.Click += new System.EventHandler(this.btn_CerrarUsuAlta_Click);
             // 
             // ProductosListado
             // 
