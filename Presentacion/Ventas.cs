@@ -64,7 +64,8 @@ namespace Presentacion
 
         private void btn_NuevaVenta_Click(object sender, EventArgs e)
         {
-            var fecha =
+            DialogResult result = MessageBox.Show("Desea generar una nueva venta?", "Una nueva venta", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
 
         }
     }

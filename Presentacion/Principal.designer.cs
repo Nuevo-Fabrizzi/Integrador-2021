@@ -41,9 +41,10 @@
             this.lbl_Fecha = new System.Windows.Forms.Label();
             this.btn_CerrarLogin = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.lbl_Locales = new System.Windows.Forms.Label();
             this.linkLbl_ConoceApp = new System.Windows.Forms.LinkLabel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblCambioDev = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -168,6 +169,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(50)))), ((int)(((byte)(61)))));
+            this.panel1.Controls.Add(this.lblCambioDev);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lbl_Locales);
             this.panel1.Controls.Add(this.lbl_usuarios);
@@ -181,6 +183,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(223, 467);
             this.panel1.TabIndex = 24;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(16, 378);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(92, 29);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "Ventas";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // lbl_Locales
             // 
@@ -205,17 +219,17 @@
             this.linkLbl_ConoceApp.TabStop = true;
             this.linkLbl_ConoceApp.Text = "Conoce más de la aplicación";
             // 
-            // label1
+            // lblCambioDev
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(16, 342);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 29);
-            this.label1.TabIndex = 25;
-            this.label1.Text = "Ventas";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.lblCambioDev.AutoSize = true;
+            this.lblCambioDev.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCambioDev.ForeColor = System.Drawing.Color.White;
+            this.lblCambioDev.Location = new System.Drawing.Point(16, 340);
+            this.lblCambioDev.Name = "lblCambioDev";
+            this.lblCambioDev.Size = new System.Drawing.Size(123, 29);
+            this.lblCambioDev.TabIndex = 26;
+            this.lblCambioDev.Text = "Cambios ";
+            this.lblCambioDev.Click += new System.EventHandler(this.lblCambioDev_Click);
             // 
             // F_Principal
             // 
@@ -259,5 +273,6 @@
         public System.Windows.Forms.Label lbl_Roles;
         private System.Windows.Forms.Label lbl_Locales;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblCambioDev;
     }
 }

@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Capa_Entidad
 {
-    class DetalleVenta
+    public class DetalleVenta
     {
+        public int Deta_IdVenta { get; set; }
+        public String Deta_CodDeProd { get; set; }
+        public int Deta_cantProdu { get; set; }
+        public decimal Deta_PrecioUnitario { get; set; }
     }
 }

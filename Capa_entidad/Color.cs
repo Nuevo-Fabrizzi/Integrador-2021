@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Capa_Entidad
 {
-    class Color
+    public class Color
     {
+        public String Col_Id { get; set; }
+        public String Col_Nombre { get; set; }
     }
 }

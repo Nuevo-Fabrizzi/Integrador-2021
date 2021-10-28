@@ -158,6 +158,12 @@ namespace Presentacion
 
         }
 
+        private void lblCambioDev_Click(object sender, EventArgs e)
+        {
+            CambioProductosClientes cambio = new CambioProductosClientes();
+            cambio.Show();
+        }
+
         private void panel2_MouseMove(object sender, MouseEventArgs e)
         {
             if (m == 1)

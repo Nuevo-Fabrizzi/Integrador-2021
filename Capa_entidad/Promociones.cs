@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Capa_Entidad
 {
-    class Promociones
+    public class Promociones
     {
+        public int Prom_IdPromocion { get; set; }
+        public DateTime Prom_FechaInicio { get; set; }
+        public DateTime Prom_FechaFin { get; set; }
+        public String Prom_EstadoPromo { get; set; }
     }
 }

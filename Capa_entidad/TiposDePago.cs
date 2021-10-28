@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Capa_Entidad
 {
-    class TiposDePago
+    public class TiposDePago
     {
+        public int Tdp_IdTipoDePago { get; set; }
+        public String Tdp_TipodePago { get; set; }
+        public String Tdp_Descripción { get; set; }
     }
 }

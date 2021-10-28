@@ -62,7 +62,6 @@ C:\Users\Usuario\Desktop\Integrador-2021\Presentacion\obj\Debug\Presentacion.Usu
 C:\Users\Usuario\Desktop\Integrador-2021\Presentacion\obj\Debug\Presentacion.Ventas.resources
 C:\Users\Usuario\Desktop\Integrador-2021\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.cache
 C:\Users\Usuario\Desktop\Integrador-2021\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
-C:\Users\Usuario\Desktop\Integrador-2021\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
 C:\Users\Usuario\Desktop\Integrador-2021\Presentacion\obj\Debug\Presentacion.exe
 C:\Users\Usuario\Desktop\Integrador-2021\Presentacion\obj\Debug\Presentacion.pdb
 C:\Users\Usuario\Desktop\Integrador-2021\Presentacion\obj\Debug\Presentacion.ProductosListado.resources

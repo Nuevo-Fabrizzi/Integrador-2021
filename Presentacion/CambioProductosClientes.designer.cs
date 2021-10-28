@@ -104,6 +104,7 @@ namespace Presentacion
             this.btn_CerrarUsuAlta.TabIndex = 65;
             this.btn_CerrarUsuAlta.Text = "X";
             this.btn_CerrarUsuAlta.UseVisualStyleBackColor = false;
+            this.btn_CerrarUsuAlta.Click += new System.EventHandler(this.btn_CerrarUsuAlta_Click);
             // 
             // btn_ImprimirCambioProductosClientes
             // 
@@ -201,9 +202,9 @@ namespace Presentacion
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(20, 321);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 17);
+            this.label2.Size = new System.Drawing.Size(137, 17);
             this.label2.TabIndex = 114;
-            this.label2.Text = "Codigo Factura";
+            this.label2.Text = "Nro Nota de Venta";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1

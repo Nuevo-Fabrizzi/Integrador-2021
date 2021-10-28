@@ -61,7 +61,7 @@ namespace Capa_Datos
         public DataTable CargarNuevaVenta()
         {
 
-            var sqlStr = "select prod_CodDeProd as Codigo,prod_Tipo as tipo,prod_subtipo as Subtipo from Productos where prod_Tipo ='" + prod_Tipo + "';";
+            var sqlStr = "insert";
             var da = new SqlDataAdapter(sqlStr, conectar());
             var ds = new DataSet();
             da.Fill(ds);
