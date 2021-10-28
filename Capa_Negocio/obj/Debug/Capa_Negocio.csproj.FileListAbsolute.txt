@@ -17,7 +17,6 @@ C:\Users\Usuario\Desktop\Integrador-2021\Capa_Negocio\bin\Debug\CapaDato.pdb
 C:\Users\Usuario\Desktop\Integrador-2021\Capa_Negocio\bin\Debug\Capa_entidad.pdb
 C:\Users\Usuario\Desktop\Integrador-2021\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.AssemblyReference.cache
 C:\Users\Usuario\Desktop\Integrador-2021\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CoreCompileInputs.cache
-C:\Users\Usuario\Desktop\Integrador-2021\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CopyComplete
 C:\Users\Usuario\Desktop\Integrador-2021\Capa_Negocio\obj\Debug\Capa_Negocio.dll
 C:\Users\Usuario\Desktop\Integrador-2021\Capa_Negocio\obj\Debug\Capa_Negocio.pdb
 C:\Users\Manu\Desktop\llkkl\Integrador-2021\Capa_Negocio\bin\Debug\Capa_Negocio.dll

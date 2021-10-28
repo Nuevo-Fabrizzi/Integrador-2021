@@ -148,3 +148,4 @@ C:\Users\Usuario\Desktop\Integrador-2021\Presentacion\obj\Debug\Presentacion.Lis
 C:\Users\Usuario\Desktop\Integrador-2021\Presentacion\obj\Debug\Presentacion.OlvideMiContraseña.resources
 C:\Users\Usuario\Desktop\Integrador-2021\Presentacion\obj\Debug\Presentacion.Registro_Pedido_Locales.resources
 C:\Users\Usuario\Desktop\Integrador-2021\Presentacion\obj\Debug\Presentacion.Rotacion_De_Productos_Deposito.resources
+C:\Users\Usuario\Desktop\Integrador-2021\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
