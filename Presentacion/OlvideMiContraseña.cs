@@ -29,39 +29,54 @@ namespace Presentacion
             var logNeg = new LoginNegocio();
             var dt = new DataTable();
             var dt2 = new DataTable();
-            
+
             legajo = Convert.ToInt32(tBox_Legajo.Text);
             dt = logNeg.consultaExisteLegajo(legajo);
             dt2 = logNeg.consultaPassAnterior(legajo);
-            var dr = dt2.Rows[0]["Pass"];
+
             string passNueva = tBox_NuevaPass.Text;
             string repPass = tBox_RepetirPass.Text;
 
             if (dt.Rows.Count != 0)
             {
+                var dr = dt2.Rows[0]["Pass"];
                 if (dr.ToString() != repPass)
                 {
-
-                    if (passNueva == repPass)
+                    if (passNueva != "")
                     {
-                        Boolean cambio = logNeg.CambiarPass(legajo, repPass);
-                        if (cambio == true)
+                        if (repPass != "")
                         {
-                            MessageBox.Show("Se registro su nueva contraseña", "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            if (passNueva == repPass)
+                            {
+                                Boolean cambio = logNeg.CambiarPass(legajo, repPass);
+                                if (cambio == true)
+                                {
+                                    MessageBox.Show("Se registro su nueva contraseña", "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                            Login log = new Login();
-                            this.Close();
-                            log.Show();
+                                    Login log = new Login();
+                                    this.Close();
+                                    log.Show();
 
+                                }
+                                else
+                                {
+                                    MessageBox.Show("No se registro su nueva contraseña", "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("Las contraseñas no coinciden, por favor verificar", "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
                         }
                         else
                         {
-                            MessageBox.Show("No se registro su nueva contraseña", "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("Debe repetir su nueva contraseña.", "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
                     else
                     {
-                        MessageBox.Show("Las contraseñas no coinciden, por favor verificar", "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Debe ingresar una nueva contraseña.", "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
                     }
                 }
                 else
