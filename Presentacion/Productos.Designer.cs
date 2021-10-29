@@ -36,9 +36,7 @@ namespace Presentacion
             this.cBox_TipoProd = new System.Windows.Forms.ComboBox();
             this.lbl_Tipo = new System.Windows.Forms.Label();
             this.tBox_Desc = new System.Windows.Forms.TextBox();
-            this.tBox_CodArt = new System.Windows.Forms.TextBox();
             this.lbl_Desc = new System.Windows.Forms.Label();
-            this.lbl_CodArt = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_TitProv = new System.Windows.Forms.Label();
             this.btn_CerrarUsuAlta = new System.Windows.Forms.Button();
@@ -62,7 +60,7 @@ namespace Presentacion
             // cbox_SubtipoProd
             // 
             this.cbox_SubtipoProd.FormattingEnabled = true;
-            this.cbox_SubtipoProd.Location = new System.Drawing.Point(179, 221);
+            this.cbox_SubtipoProd.Location = new System.Drawing.Point(179, 189);
             this.cbox_SubtipoProd.Name = "cbox_SubtipoProd";
             this.cbox_SubtipoProd.Size = new System.Drawing.Size(195, 21);
             this.cbox_SubtipoProd.TabIndex = 105;
@@ -72,7 +70,7 @@ namespace Presentacion
             this.lbl_subtipo.AutoSize = true;
             this.lbl_subtipo.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold);
             this.lbl_subtipo.ForeColor = System.Drawing.Color.Cornsilk;
-            this.lbl_subtipo.Location = new System.Drawing.Point(108, 221);
+            this.lbl_subtipo.Location = new System.Drawing.Point(96, 189);
             this.lbl_subtipo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_subtipo.Name = "lbl_subtipo";
             this.lbl_subtipo.Size = new System.Drawing.Size(64, 17);
@@ -121,7 +119,7 @@ namespace Presentacion
             "Remeras",
             "Sastreria",
             "Sweaters"});
-            this.cBox_TipoProd.Location = new System.Drawing.Point(179, 181);
+            this.cBox_TipoProd.Location = new System.Drawing.Point(179, 152);
             this.cBox_TipoProd.Name = "cBox_TipoProd";
             this.cBox_TipoProd.Size = new System.Drawing.Size(195, 21);
             this.cBox_TipoProd.TabIndex = 98;
@@ -132,7 +130,7 @@ namespace Presentacion
             this.lbl_Tipo.AutoSize = true;
             this.lbl_Tipo.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold);
             this.lbl_Tipo.ForeColor = System.Drawing.Color.Cornsilk;
-            this.lbl_Tipo.Location = new System.Drawing.Point(122, 181);
+            this.lbl_Tipo.Location = new System.Drawing.Point(118, 152);
             this.lbl_Tipo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Tipo.Name = "lbl_Tipo";
             this.lbl_Tipo.Size = new System.Drawing.Size(42, 17);
@@ -146,13 +144,6 @@ namespace Presentacion
             this.tBox_Desc.Size = new System.Drawing.Size(229, 20);
             this.tBox_Desc.TabIndex = 96;
             // 
-            // tBox_CodArt
-            // 
-            this.tBox_CodArt.Location = new System.Drawing.Point(179, 107);
-            this.tBox_CodArt.Name = "tBox_CodArt";
-            this.tBox_CodArt.Size = new System.Drawing.Size(195, 20);
-            this.tBox_CodArt.TabIndex = 95;
-            // 
             // lbl_Desc
             // 
             this.lbl_Desc.AutoSize = true;
@@ -164,18 +155,6 @@ namespace Presentacion
             this.lbl_Desc.Size = new System.Drawing.Size(91, 17);
             this.lbl_Desc.TabIndex = 94;
             this.lbl_Desc.Text = "Descripción:";
-            // 
-            // lbl_CodArt
-            // 
-            this.lbl_CodArt.AutoSize = true;
-            this.lbl_CodArt.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lbl_CodArt.ForeColor = System.Drawing.Color.Cornsilk;
-            this.lbl_CodArt.Location = new System.Drawing.Point(23, 110);
-            this.lbl_CodArt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl_CodArt.Name = "lbl_CodArt";
-            this.lbl_CodArt.Size = new System.Drawing.Size(139, 17);
-            this.lbl_CodArt.TabIndex = 93;
-            this.lbl_CodArt.Text = "Código de artículo:";
             // 
             // panel1
             // 
@@ -225,7 +204,7 @@ namespace Presentacion
             "46",
             "48",
             "50"});
-            this.cBox_Talle.Location = new System.Drawing.Point(179, 267);
+            this.cBox_Talle.Location = new System.Drawing.Point(179, 234);
             this.cBox_Talle.Name = "cBox_Talle";
             this.cBox_Talle.Size = new System.Drawing.Size(195, 21);
             this.cBox_Talle.TabIndex = 107;
@@ -236,7 +215,7 @@ namespace Presentacion
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.Cornsilk;
-            this.label1.Location = new System.Drawing.Point(118, 267);
+            this.label1.Location = new System.Drawing.Point(116, 238);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 17);
@@ -257,7 +236,7 @@ namespace Presentacion
             // 
             // txtCantidadProd
             // 
-            this.txtCantidadProd.Location = new System.Drawing.Point(179, 354);
+            this.txtCantidadProd.Location = new System.Drawing.Point(179, 321);
             this.txtCantidadProd.Name = "txtCantidadProd";
             this.txtCantidadProd.Size = new System.Drawing.Size(195, 20);
             this.txtCantidadProd.TabIndex = 110;
@@ -267,12 +246,12 @@ namespace Presentacion
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.Cornsilk;
-            this.label3.Location = new System.Drawing.Point(96, 354);
+            this.label3.Location = new System.Drawing.Point(92, 324);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 17);
+            this.label3.Size = new System.Drawing.Size(72, 17);
             this.label3.TabIndex = 109;
-            this.label3.Text = "Cantidad";
+            this.label3.Text = "Cantidad:";
             // 
             // cBox_UbiDepo
             // 
@@ -281,7 +260,6 @@ namespace Presentacion
             this.cBox_UbiDepo.Name = "cBox_UbiDepo";
             this.cBox_UbiDepo.Size = new System.Drawing.Size(170, 21);
             this.cBox_UbiDepo.TabIndex = 111;
-          //  this.cBox_UbiDepo.SelectedIndexChanged += new System.EventHandler(this.cmbUbiDepo_SelectedIndexChanged);
             // 
             // cBox_Estado
             // 
@@ -293,7 +271,7 @@ namespace Presentacion
             "",
             "",
             ""});
-            this.cBox_Estado.Location = new System.Drawing.Point(179, 144);
+            this.cBox_Estado.Location = new System.Drawing.Point(179, 113);
             this.cBox_Estado.Name = "cBox_Estado";
             this.cBox_Estado.Size = new System.Drawing.Size(195, 21);
             this.cBox_Estado.TabIndex = 115;
@@ -303,12 +281,12 @@ namespace Presentacion
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.Cornsilk;
-            this.label5.Location = new System.Drawing.Point(107, 148);
+            this.label5.Location = new System.Drawing.Point(102, 117);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 17);
+            this.label5.Size = new System.Drawing.Size(58, 17);
             this.label5.TabIndex = 114;
-            this.label5.Text = "Estado";
+            this.label5.Text = "Estado:";
             // 
             // cBox_Temporada
             // 
@@ -317,7 +295,7 @@ namespace Presentacion
             "Seleccione",
             "Primavera-Verano",
             "Otoño-Invierno"});
-            this.cBox_Temporada.Location = new System.Drawing.Point(179, 309);
+            this.cBox_Temporada.Location = new System.Drawing.Point(179, 276);
             this.cBox_Temporada.Name = "cBox_Temporada";
             this.cBox_Temporada.Size = new System.Drawing.Size(195, 21);
             this.cBox_Temporada.TabIndex = 117;
@@ -327,12 +305,12 @@ namespace Presentacion
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.Cornsilk;
-            this.label6.Location = new System.Drawing.Point(87, 309);
+            this.label6.Location = new System.Drawing.Point(71, 280);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(85, 17);
+            this.label6.Size = new System.Drawing.Size(89, 17);
             this.label6.TabIndex = 116;
-            this.label6.Text = "Temporada";
+            this.label6.Text = "Temporada:";
             // 
             // cBox_EstantePerchero
             // 
@@ -381,7 +359,7 @@ namespace Presentacion
             "13-Rojo",
             "14-Rosa",
             "15-Salmon"});
-            this.cBox_Color.Location = new System.Drawing.Point(179, 394);
+            this.cBox_Color.Location = new System.Drawing.Point(179, 368);
             this.cBox_Color.Name = "cBox_Color";
             this.cBox_Color.Size = new System.Drawing.Size(195, 21);
             this.cBox_Color.TabIndex = 121;
@@ -391,12 +369,12 @@ namespace Presentacion
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.Color.Cornsilk;
-            this.label7.Location = new System.Drawing.Point(116, 398);
+            this.label7.Location = new System.Drawing.Point(115, 372);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(45, 17);
+            this.label7.Size = new System.Drawing.Size(49, 17);
             this.label7.TabIndex = 120;
-            this.label7.Text = "Color";
+            this.label7.Text = "Color:";
             // 
             // Productos
             // 
@@ -425,9 +403,7 @@ namespace Presentacion
             this.Controls.Add(this.cBox_TipoProd);
             this.Controls.Add(this.lbl_Tipo);
             this.Controls.Add(this.tBox_Desc);
-            this.Controls.Add(this.tBox_CodArt);
             this.Controls.Add(this.lbl_Desc);
-            this.Controls.Add(this.lbl_CodArt);
             this.Controls.Add(this.panel1);
             this.Name = "Productos";
             this.Text = "Productos";
@@ -448,9 +424,7 @@ namespace Presentacion
         private System.Windows.Forms.ComboBox cBox_TipoProd;
         public System.Windows.Forms.Label lbl_Tipo;
         private System.Windows.Forms.TextBox tBox_Desc;
-        private System.Windows.Forms.TextBox tBox_CodArt;
         public System.Windows.Forms.Label lbl_Desc;
-        public System.Windows.Forms.Label lbl_CodArt;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbl_TitProv;
         private System.Windows.Forms.Button btn_CerrarUsuAlta;

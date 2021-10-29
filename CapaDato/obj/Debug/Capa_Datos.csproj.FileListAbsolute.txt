@@ -34,3 +34,12 @@ C:\Users\Erica\Source\Repos\Fabrizzi_Nuevo\Integrador-2021\CapaDato\obj\Debug\Ca
 C:\Users\Erica\Source\Repos\Fabrizzi_Nuevo\Integrador-2021\CapaDato\obj\Debug\Capa_Datos.csproj.CopyComplete
 C:\Users\Erica\Source\Repos\Fabrizzi_Nuevo\Integrador-2021\CapaDato\obj\Debug\CapaDato.dll
 C:\Users\Erica\Source\Repos\Fabrizzi_Nuevo\Integrador-2021\CapaDato\obj\Debug\CapaDato.pdb
+C:\Users\Erica\Source\Integrador-2021\CapaDato\bin\Debug\CapaDato.dll
+C:\Users\Erica\Source\Integrador-2021\CapaDato\bin\Debug\CapaDato.pdb
+C:\Users\Erica\Source\Integrador-2021\CapaDato\bin\Debug\Capa_entidad.dll
+C:\Users\Erica\Source\Integrador-2021\CapaDato\bin\Debug\Capa_entidad.pdb
+C:\Users\Erica\Source\Integrador-2021\CapaDato\obj\Debug\Capa_Datos.csproj.AssemblyReference.cache
+C:\Users\Erica\Source\Integrador-2021\CapaDato\obj\Debug\Capa_Datos.csproj.CoreCompileInputs.cache
+C:\Users\Erica\Source\Integrador-2021\CapaDato\obj\Debug\Capa_Datos.csproj.CopyComplete
+C:\Users\Erica\Source\Integrador-2021\CapaDato\obj\Debug\CapaDato.dll
+C:\Users\Erica\Source\Integrador-2021\CapaDato\obj\Debug\CapaDato.pdb
