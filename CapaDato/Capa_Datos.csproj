@@ -7,8 +7,8 @@
     <ProjectGuid>{9014E74E-2BA6-4897-A386-BB577638643B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CapaDato</RootNamespace>
-    <AssemblyName>CapaDato</AssemblyName>
+    <RootNamespace>Capa_Dato</RootNamespace>
+    <AssemblyName>Capa_Dato</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -52,6 +52,7 @@
     <Compile Include="ProveedoresMetodos.cs" />
     <Compile Include="RolesMetodos.cs" />
     <Compile Include="UsuariosMetodos.cs" />
+    <Compile Include="VentasMetodos.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Capa_entidad\Capa_Entidad.csproj">

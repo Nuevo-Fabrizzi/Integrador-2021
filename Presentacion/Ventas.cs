@@ -14,12 +14,19 @@ namespace Presentacion
 {
     public partial class Ventas : Form
     {
+       
+
         public Ventas()
         {
             InitializeComponent();
             autocompletar();
+          
+
         }
 
+      
+
+        string usuID="";
 
 
         private void Ventas_Load(object sender, EventArgs e)
@@ -56,6 +63,9 @@ namespace Presentacion
             }
         }
 
-       
+        private void btn_CerrarUsuAlta_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
