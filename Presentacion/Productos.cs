@@ -261,38 +261,7 @@ namespace Presentacion
 
         private void cmbTalle_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int ta = cmbTalle.SelectedIndex;
-
-            switch (ta)
-            {
-                case 1:
-                    cmbTalle.Items.Add("36");
-                    break;
-                case 2:
-                    cmbTalle.Items.Add("38");
-                    break;
-                case 3:
-                    cmbTalle.Items.Add("40");
-                    break;
-                case 4:
-                    cmbTalle.Items.Add("42");
-                    break;
-                case 5:
-                    cmbTalle.Items.Add("44");
-                    break;
-                case 6:
-                    cmbTalle.Items.Add("46");
-                    break;
-                case 7:
-                    cmbTalle.Items.Add("48");
-                    break;
-                case 8:
-                    cmbTalle.Items.Add("50");
-                    break;
-                default:
-                    break;
-
-            }
+           
         }
 
         private void cmbUbiDepo_SelectedIndexChanged(object sender, EventArgs e)

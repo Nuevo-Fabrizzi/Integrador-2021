@@ -29,11 +29,11 @@ namespace Presentacion
         /// </summary>
         private void InitializeComponent()
         {
-            this.cbox_subitpoProd = new System.Windows.Forms.ComboBox();
+            this.cbox_SubtipoProd = new System.Windows.Forms.ComboBox();
             this.lbl_subtipo = new System.Windows.Forms.Label();
             this.cBox_TipoProd = new System.Windows.Forms.ComboBox();
             this.lbl_Tipo = new System.Windows.Forms.Label();
-            this.btn_BajaProv = new System.Windows.Forms.Button();
+            this.btn_VtaProd = new System.Windows.Forms.Button();
             this.btn_ModifProv = new System.Windows.Forms.Button();
             this.btn_ImprimirProv = new System.Windows.Forms.Button();
             this.btn_NuevoProv = new System.Windows.Forms.Button();
@@ -48,13 +48,14 @@ namespace Presentacion
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // cbox_subitpoProd
+            // cbox_SubtipoProd
             // 
-            this.cbox_subitpoProd.FormattingEnabled = true;
-            this.cbox_subitpoProd.Location = new System.Drawing.Point(418, 165);
-            this.cbox_subitpoProd.Name = "cbox_subitpoProd";
-            this.cbox_subitpoProd.Size = new System.Drawing.Size(195, 21);
-            this.cbox_subitpoProd.TabIndex = 108;
+            this.cbox_SubtipoProd.FormattingEnabled = true;
+            this.cbox_SubtipoProd.Location = new System.Drawing.Point(418, 165);
+            this.cbox_SubtipoProd.Name = "cbox_SubtipoProd";
+            this.cbox_SubtipoProd.Size = new System.Drawing.Size(195, 21);
+            this.cbox_SubtipoProd.TabIndex = 108;
+            this.cbox_SubtipoProd.SelectedIndexChanged += new System.EventHandler(this.cbox_SubtipoProd_SelectedIndexChanged);
             // 
             // lbl_subtipo
             // 
@@ -73,10 +74,17 @@ namespace Presentacion
             this.cBox_TipoProd.FormattingEnabled = true;
             this.cBox_TipoProd.Items.AddRange(new object[] {
             "Seleccione",
-            "De Confección",
-            "De Corte",
-            "Maquinarias",
-            "Otros"});
+            "Abrigos",
+            "Accesorios",
+            "Calzados",
+            "Camisas mangas cortas",
+            "Camisas mangas largas",
+            "Camperas",
+            "Pantalones bermudas",
+            "Pantalones largos",
+            "Remeras",
+            "Sastreria",
+            "Sweaters"});
             this.cBox_TipoProd.Location = new System.Drawing.Point(101, 165);
             this.cBox_TipoProd.Name = "cBox_TipoProd";
             this.cBox_TipoProd.Size = new System.Drawing.Size(195, 21);
@@ -94,17 +102,18 @@ namespace Presentacion
             this.lbl_Tipo.TabIndex = 105;
             this.lbl_Tipo.Text = "Tipo:";
             // 
-            // btn_BajaProv
+            // btn_VtaProd
             // 
-            this.btn_BajaProv.BackColor = System.Drawing.Color.SeaGreen;
-            this.btn_BajaProv.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_BajaProv.ForeColor = System.Drawing.Color.White;
-            this.btn_BajaProv.Location = new System.Drawing.Point(496, 420);
-            this.btn_BajaProv.Name = "btn_BajaProv";
-            this.btn_BajaProv.Size = new System.Drawing.Size(140, 39);
-            this.btn_BajaProv.TabIndex = 104;
-            this.btn_BajaProv.Text = "Dar de baja Proveedor";
-            this.btn_BajaProv.UseVisualStyleBackColor = false;
+            this.btn_VtaProd.BackColor = System.Drawing.Color.SeaGreen;
+            this.btn_VtaProd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_VtaProd.ForeColor = System.Drawing.Color.White;
+            this.btn_VtaProd.Location = new System.Drawing.Point(496, 420);
+            this.btn_VtaProd.Name = "btn_VtaProd";
+            this.btn_VtaProd.Size = new System.Drawing.Size(140, 39);
+            this.btn_VtaProd.TabIndex = 104;
+            this.btn_VtaProd.Text = "Venta producto";
+            this.btn_VtaProd.UseVisualStyleBackColor = false;
+            this.btn_VtaProd.Click += new System.EventHandler(this.btn_VtaProd_Click);
             // 
             // btn_ModifProv
             // 
@@ -167,6 +176,7 @@ namespace Presentacion
             this.btn_BuscarProducto.TabIndex = 99;
             this.btn_BuscarProducto.Text = "Buscar";
             this.btn_BuscarProducto.UseVisualStyleBackColor = false;
+            this.btn_BuscarProducto.Click += new System.EventHandler(this.btn_BuscarProducto_Click);
             // 
             // lbl_RazonSocial
             // 
@@ -233,11 +243,11 @@ namespace Presentacion
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(50)))), ((int)(((byte)(61)))));
             this.ClientSize = new System.Drawing.Size(844, 492);
-            this.Controls.Add(this.cbox_subitpoProd);
+            this.Controls.Add(this.cbox_SubtipoProd);
             this.Controls.Add(this.lbl_subtipo);
             this.Controls.Add(this.cBox_TipoProd);
             this.Controls.Add(this.lbl_Tipo);
-            this.Controls.Add(this.btn_BajaProv);
+            this.Controls.Add(this.btn_VtaProd);
             this.Controls.Add(this.btn_ModifProv);
             this.Controls.Add(this.btn_ImprimirProv);
             this.Controls.Add(this.btn_NuevoProv);
@@ -248,6 +258,7 @@ namespace Presentacion
             this.Controls.Add(this.panel1);
             this.Name = "ProductosListado";
             this.Text = "ProductosListado";
+            this.Load += new System.EventHandler(this.ProductosListado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ListProductos)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -258,11 +269,11 @@ namespace Presentacion
 
         #endregion
 
-        private System.Windows.Forms.ComboBox cbox_subitpoProd;
+        private System.Windows.Forms.ComboBox cbox_SubtipoProd;
         public System.Windows.Forms.Label lbl_subtipo;
         private System.Windows.Forms.ComboBox cBox_TipoProd;
         public System.Windows.Forms.Label lbl_Tipo;
-        public System.Windows.Forms.Button btn_BajaProv;
+        public System.Windows.Forms.Button btn_VtaProd;
         public System.Windows.Forms.Button btn_ModifProv;
         private System.Windows.Forms.Button btn_ImprimirProv;
         private System.Windows.Forms.Button btn_NuevoProv;

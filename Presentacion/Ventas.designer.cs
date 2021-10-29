@@ -35,7 +35,7 @@ namespace Presentacion
             this.lbl_TitVentas = new System.Windows.Forms.Label();
             this.btn_CerrarUsuAlta = new System.Windows.Forms.Button();
             this.dgvVentas = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCodProd = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -116,6 +116,7 @@ namespace Presentacion
             this.btn_CerrarUsuAlta.TabIndex = 65;
             this.btn_CerrarUsuAlta.Text = "X";
             this.btn_CerrarUsuAlta.UseVisualStyleBackColor = false;
+            this.btn_CerrarUsuAlta.Click += new System.EventHandler(this.btn_CerrarUsuAlta_Click);
             // 
             // dgvVentas
             // 
@@ -129,17 +130,20 @@ namespace Presentacion
             this.dgvVentas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvVentas.Size = new System.Drawing.Size(761, 154);
             this.dgvVentas.TabIndex = 82;
+            this.dgvVentas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvVentas_CellContentClick);
             // 
-            // textBox1
+            // txtCodProd
             // 
-            this.textBox1.Location = new System.Drawing.Point(36, 318);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(166, 20);
-            this.textBox1.TabIndex = 83;
+            this.txtCodProd.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.txtCodProd.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.txtCodProd.Location = new System.Drawing.Point(36, 318);
+            this.txtCodProd.Name = "txtCodProd";
+            this.txtCodProd.Size = new System.Drawing.Size(166, 20);
+            this.txtCodProd.TabIndex = 83;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(36, 389);
+            this.textBox2.Location = new System.Drawing.Point(383, 389);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(166, 20);
             this.textBox2.TabIndex = 84;
@@ -258,7 +262,6 @@ namespace Presentacion
             this.label6.Size = new System.Drawing.Size(31, 17);
             this.label6.TabIndex = 97;
             this.label6.Text = "C/T";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 
@@ -276,7 +279,7 @@ namespace Presentacion
             this.Descripcion.AutoSize = true;
             this.Descripcion.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Descripcion.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Descripcion.Location = new System.Drawing.Point(68, 412);
+            this.Descripcion.Location = new System.Drawing.Point(423, 412);
             this.Descripcion.Name = "Descripcion";
             this.Descripcion.Size = new System.Drawing.Size(87, 17);
             this.Descripcion.TabIndex = 99;
@@ -298,19 +301,20 @@ namespace Presentacion
             this.btn_ImprimirVentas.BackColor = System.Drawing.Color.SeaGreen;
             this.btn_ImprimirVentas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ImprimirVentas.ForeColor = System.Drawing.Color.White;
-            this.btn_ImprimirVentas.Location = new System.Drawing.Point(798, 161);
+            this.btn_ImprimirVentas.Location = new System.Drawing.Point(798, 462);
             this.btn_ImprimirVentas.Name = "btn_ImprimirVentas";
             this.btn_ImprimirVentas.Size = new System.Drawing.Size(140, 39);
             this.btn_ImprimirVentas.TabIndex = 101;
             this.btn_ImprimirVentas.Text = "Imprimir";
             this.btn_ImprimirVentas.UseVisualStyleBackColor = false;
+            this.btn_ImprimirVentas.Click += new System.EventHandler(this.btn_ImprimirVentas_Click);
             // 
             // Btn_GuardarVentaProductos
             // 
             this.Btn_GuardarVentaProductos.BackColor = System.Drawing.Color.SeaGreen;
             this.Btn_GuardarVentaProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_GuardarVentaProductos.ForeColor = System.Drawing.Color.White;
-            this.Btn_GuardarVentaProductos.Location = new System.Drawing.Point(798, 222);
+            this.Btn_GuardarVentaProductos.Location = new System.Drawing.Point(798, 151);
             this.Btn_GuardarVentaProductos.Name = "Btn_GuardarVentaProductos";
             this.Btn_GuardarVentaProductos.Size = new System.Drawing.Size(140, 39);
             this.Btn_GuardarVentaProductos.TabIndex = 102;
@@ -342,12 +346,13 @@ namespace Presentacion
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCodProd);
             this.Controls.Add(this.dgvVentas);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Ventas";
-            this.Text = "Ventas";
+            this.Text = " ";
+            this.Load += new System.EventHandler(this.Ventas_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVentas)).EndInit();
@@ -362,7 +367,7 @@ namespace Presentacion
         private System.Windows.Forms.Button btn_CerrarUsuAlta;
         private System.Windows.Forms.DataGridView dgvVentas;
         private System.Windows.Forms.Label lbl_TitVentas;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCodProd;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;

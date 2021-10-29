@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Capa_entidad
+namespace Capa_Entidad
 {
     public class Producto
     {

@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Capa_Entidad;
 using Capa_Datos;
-using Capa_entidad;
+using System.Data;
+
 
 namespace Capa_Negocio
 {
@@ -16,6 +17,11 @@ namespace Capa_Negocio
         {
             Boolean result = objProdMetodos.NuevoProducto(prod);
             return result;
+        }
+
+        public DataTable ConsultarProducto()
+        {
+            return objProdMetodos.ConsultarProducto();
         }
     }
 }

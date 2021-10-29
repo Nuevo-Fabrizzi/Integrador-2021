@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using Capa_Entidad;
-using Capa_entidad;
+
 
 namespace Capa_Datos
 {
@@ -34,6 +34,22 @@ namespace Capa_Datos
             {
                 return false;
             }
+        }
+
+        public DataTable ConsultarProducto(Producto codDeProd)
+        {
+            throw new NotImplementedException();
+        }
+
+        public DataTable ConsultarProducto()
+        {
+            var sqlStr = "select * from Productos";
+            var da = new SqlDataAdapter(sqlStr, conectar());
+            var ds = new DataSet();
+            da.Fill(ds);
+            DataTable dt = ds.Tables[0];
+
+            return dt;
         }
 
     }

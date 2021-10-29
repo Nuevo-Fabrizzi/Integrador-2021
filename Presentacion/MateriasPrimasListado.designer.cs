@@ -119,7 +119,6 @@ namespace Presentacion
             this.dgv_ListMateriaPrima.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_ListMateriaPrima.Size = new System.Drawing.Size(777, 154);
             this.dgv_ListMateriaPrima.TabIndex = 77;
-      //      this.dgv_ListMateriaPrima.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_ListProv_CellContentClick);
             // 
             // cBox_ProveedorBuscar
             // 

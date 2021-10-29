@@ -15,3 +15,9 @@ C:\Users\Manu\Desktop\llkkl\Integrador-2021\Capa_entidad\obj\Debug\Capa_Entidad.
 C:\Users\Manu\Desktop\llkkl\Integrador-2021\Capa_entidad\obj\Debug\Capa_Entidad.csproj.CoreCompileInputs.cache
 C:\Users\Manu\Desktop\llkkl\Integrador-2021\Capa_entidad\obj\Debug\Capa_entidad.dll
 C:\Users\Manu\Desktop\llkkl\Integrador-2021\Capa_entidad\obj\Debug\Capa_entidad.pdb
+C:\Users\BIENVENIDO\OneDrive\Escritorio\Integrador-2021\Capa_entidad\bin\Debug\Capa_entidad.dll
+C:\Users\BIENVENIDO\OneDrive\Escritorio\Integrador-2021\Capa_entidad\bin\Debug\Capa_entidad.pdb
+C:\Users\BIENVENIDO\OneDrive\Escritorio\Integrador-2021\Capa_entidad\obj\Debug\Capa_Entidad.csproj.AssemblyReference.cache
+C:\Users\BIENVENIDO\OneDrive\Escritorio\Integrador-2021\Capa_entidad\obj\Debug\Capa_Entidad.csproj.CoreCompileInputs.cache
+C:\Users\BIENVENIDO\OneDrive\Escritorio\Integrador-2021\Capa_entidad\obj\Debug\Capa_entidad.dll
+C:\Users\BIENVENIDO\OneDrive\Escritorio\Integrador-2021\Capa_entidad\obj\Debug\Capa_entidad.pdb

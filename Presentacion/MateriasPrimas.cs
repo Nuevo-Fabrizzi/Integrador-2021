@@ -5,7 +5,8 @@ using Capa_Entidad;
 using Capa_Negocio;
 
 namespace Presentacion
-{
+{//a ver
+
     public partial class MateriasPrimas : Form
     {
         public MateriasPrimas()
