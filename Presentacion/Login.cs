@@ -15,11 +15,11 @@ namespace Presentacion
             InitializeComponent();
         }
 
-        
+        public String usuID ="";//linea itati
 
         private void Btn_Ingresar_Click(object sender, EventArgs e)
-        {           
-            
+        {
+           
             var dt = new DataTable();
             var usu = new LoginNegocio();
             var usuario = TextBox_User.Text;
@@ -37,7 +37,7 @@ namespace Presentacion
                 {
                     DataRow row = dt.Rows[0];
                     frmPrin.lbl_Usuario.Text = Convert.ToString(row[0]);
-                }
+                 }
 
                 frmPrin.lbl_Legajo.Text = usuario;
                 frmPrin.lbl_Fecha.Text = DateTime.Now.ToShortDateString();
@@ -52,6 +52,15 @@ namespace Presentacion
                 if ( nombre != "Admin" )
                 {
                     frmPrin.lbl_Roles.Visible = false;
+
+                }
+                if (nombre == "Vendedor" )
+                {
+                   
+                    Ventas usulog = new Ventas();
+                    usulog.lblUsuarios_Venta.Text = usuario;
+                  
+                  
 
                 }
             }
@@ -93,5 +102,6 @@ namespace Presentacion
             
 
         }
+        
     }
 }

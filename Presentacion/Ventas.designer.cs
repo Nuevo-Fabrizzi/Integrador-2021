@@ -31,7 +31,7 @@ namespace Presentacion
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
-            this.lbl = new System.Windows.Forms.Label();
+            this.lblUsuarios_Venta = new System.Windows.Forms.Label();
             this.lbl_TitVentas = new System.Windows.Forms.Label();
             this.btn_CerrarUsuAlta = new System.Windows.Forms.Button();
             this.dgvVentas = new System.Windows.Forms.DataGridView();
@@ -55,6 +55,7 @@ namespace Presentacion
             this.label9 = new System.Windows.Forms.Label();
             this.btn_ImprimirVentas = new System.Windows.Forms.Button();
             this.Btn_GuardarVentaProductos = new System.Windows.Forms.Button();
+            this.lblLegajo = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVentas)).BeginInit();
             this.SuspendLayout();
@@ -62,8 +63,9 @@ namespace Presentacion
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.lblLegajo);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.lbl);
+            this.panel1.Controls.Add(this.lblUsuarios_Venta);
             this.panel1.Controls.Add(this.lbl_TitVentas);
             this.panel1.Controls.Add(this.btn_CerrarUsuAlta);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -77,22 +79,22 @@ namespace Presentacion
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label10.Location = new System.Drawing.Point(721, 49);
+            this.label10.Location = new System.Drawing.Point(696, 49);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(43, 17);
             this.label10.TabIndex = 103;
             this.label10.Text = "Local";
             // 
-            // lbl
+            // lblUsuarios_Venta
             // 
-            this.lbl.AutoSize = true;
-            this.lbl.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl.Location = new System.Drawing.Point(721, 26);
-            this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(60, 17);
-            this.lbl.TabIndex = 102;
-            this.lbl.Text = "Usuario";
+            this.lblUsuarios_Venta.AutoSize = true;
+            this.lblUsuarios_Venta.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuarios_Venta.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblUsuarios_Venta.Location = new System.Drawing.Point(696, 26);
+            this.lblUsuarios_Venta.Name = "lblUsuarios_Venta";
+            this.lblUsuarios_Venta.Size = new System.Drawing.Size(60, 17);
+            this.lblUsuarios_Venta.TabIndex = 102;
+            this.lblUsuarios_Venta.Text = "Usuario";
             // 
             // lbl_TitVentas
             // 
@@ -116,6 +118,7 @@ namespace Presentacion
             this.btn_CerrarUsuAlta.TabIndex = 65;
             this.btn_CerrarUsuAlta.Text = "X";
             this.btn_CerrarUsuAlta.UseVisualStyleBackColor = false;
+            this.btn_CerrarUsuAlta.Click += new System.EventHandler(this.btn_CerrarUsuAlta_Click_1);
             // 
             // dgvVentas
             // 
@@ -318,6 +321,17 @@ namespace Presentacion
             this.Btn_GuardarVentaProductos.Text = "Guardar";
             this.Btn_GuardarVentaProductos.UseVisualStyleBackColor = false;
             // 
+            // lblLegajo
+            // 
+            this.lblLegajo.AutoSize = true;
+            this.lblLegajo.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLegajo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblLegajo.Location = new System.Drawing.Point(629, 26);
+            this.lblLegajo.Name = "lblLegajo";
+            this.lblLegajo.Size = new System.Drawing.Size(53, 17);
+            this.lblLegajo.TabIndex = 104;
+            this.lblLegajo.Text = "Legajo";
+            // 
             // Ventas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -363,27 +377,28 @@ namespace Presentacion
         private System.Windows.Forms.Button btn_CerrarUsuAlta;
         private System.Windows.Forms.DataGridView dgvVentas;
         private System.Windows.Forms.Label lbl_TitVentas;
-        private System.Windows.Forms.TextBox txtCodProd;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label Descripcion;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btn_ImprimirVentas;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label lbl;
         private System.Windows.Forms.Button Btn_GuardarVentaProductos;
+        public System.Windows.Forms.TextBox txtCodProd;
+        public System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.TextBox textBox3;
+        public System.Windows.Forms.TextBox textBox4;
+        public System.Windows.Forms.TextBox textBox5;
+        public System.Windows.Forms.TextBox textBox6;
+        public System.Windows.Forms.TextBox textBox7;
+        public System.Windows.Forms.TextBox textBox8;
+        public System.Windows.Forms.TextBox textBox9;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.Label label5;
+        public System.Windows.Forms.Label label6;
+        public System.Windows.Forms.Label label7;
+        public System.Windows.Forms.Label Descripcion;
+        public System.Windows.Forms.Label label9;
+        public System.Windows.Forms.Label label10;
+        public System.Windows.Forms.Label lblUsuarios_Venta;
+        public System.Windows.Forms.Label lblLegajo;
     }
 }

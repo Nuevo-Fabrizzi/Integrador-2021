@@ -41,6 +41,7 @@
             this.lbl_Fecha = new System.Windows.Forms.Label();
             this.btn_CerrarLogin = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblVentas = new System.Windows.Forms.Label();
             this.lbl_Locales = new System.Windows.Forms.Label();
             this.linkLbl_ConoceApp = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
@@ -167,6 +168,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(50)))), ((int)(((byte)(61)))));
+            this.panel1.Controls.Add(this.lblVentas);
             this.panel1.Controls.Add(this.lbl_Locales);
             this.panel1.Controls.Add(this.lbl_usuarios);
             this.panel1.Controls.Add(this.btn_CerrarLogin);
@@ -179,6 +181,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(223, 467);
             this.panel1.TabIndex = 24;
+            // 
+            // lblVentas
+            // 
+            this.lblVentas.AutoSize = true;
+            this.lblVentas.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVentas.ForeColor = System.Drawing.Color.White;
+            this.lblVentas.Location = new System.Drawing.Point(26, 366);
+            this.lblVentas.Name = "lblVentas";
+            this.lblVentas.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblVentas.Size = new System.Drawing.Size(92, 29);
+            this.lblVentas.TabIndex = 25;
+            this.lblVentas.Text = "Ventas";
+            this.lblVentas.Click += new System.EventHandler(this.lblVentas_Click);
             // 
             // lbl_Locales
             // 
@@ -244,5 +259,6 @@
         private System.Windows.Forms.LinkLabel linkLbl_ConoceApp;
         public System.Windows.Forms.Label lbl_Roles;
         private System.Windows.Forms.Label lbl_Locales;
+        public System.Windows.Forms.Label lblVentas;
     }
 }

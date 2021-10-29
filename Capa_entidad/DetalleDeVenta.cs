@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Capa_Entidad
+namespace Capa_entidad
 {
-    class Venta
+    class DetalleDeVenta
     {
     }
 }
