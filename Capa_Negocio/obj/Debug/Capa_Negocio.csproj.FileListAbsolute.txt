@@ -52,3 +52,15 @@ C:\Users\Usuario\Source\Repos\Nuevo-Fabrizzi\Integrador-2021\Capa_Negocio\obj\De
 C:\Users\Usuario\Source\Repos\Nuevo-Fabrizzi\Integrador-2021\Capa_Negocio\obj\Debug\Capa_Negocio.pdb
 C:\Users\Usuario\Source\Repos\Nuevo-Fabrizzi\Integrador-2021\Capa_Negocio\bin\Debug\Capa_Dato.dll
 C:\Users\Usuario\Source\Repos\Nuevo-Fabrizzi\Integrador-2021\Capa_Negocio\bin\Debug\Capa_Dato.pdb
+C:\Users\Usuario\Source\Repos\Nuevo-Fabrizzi\Integrador-2021\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CopyComplete
+C:\Users\BIENVENIDO\OneDrive\Escritorio\Integrador-2021\Capa_Negocio\bin\Debug\Capa_Negocio.dll
+C:\Users\BIENVENIDO\OneDrive\Escritorio\Integrador-2021\Capa_Negocio\bin\Debug\Capa_Negocio.pdb
+C:\Users\BIENVENIDO\OneDrive\Escritorio\Integrador-2021\Capa_Negocio\bin\Debug\Capa_Dato.dll
+C:\Users\BIENVENIDO\OneDrive\Escritorio\Integrador-2021\Capa_Negocio\bin\Debug\Capa_Entidad.dll
+C:\Users\BIENVENIDO\OneDrive\Escritorio\Integrador-2021\Capa_Negocio\bin\Debug\Capa_Dato.pdb
+C:\Users\BIENVENIDO\OneDrive\Escritorio\Integrador-2021\Capa_Negocio\bin\Debug\Capa_Entidad.pdb
+C:\Users\BIENVENIDO\OneDrive\Escritorio\Integrador-2021\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.AssemblyReference.cache
+C:\Users\BIENVENIDO\OneDrive\Escritorio\Integrador-2021\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CoreCompileInputs.cache
+C:\Users\BIENVENIDO\OneDrive\Escritorio\Integrador-2021\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CopyComplete
+C:\Users\BIENVENIDO\OneDrive\Escritorio\Integrador-2021\Capa_Negocio\obj\Debug\Capa_Negocio.dll
+C:\Users\BIENVENIDO\OneDrive\Escritorio\Integrador-2021\Capa_Negocio\obj\Debug\Capa_Negocio.pdb

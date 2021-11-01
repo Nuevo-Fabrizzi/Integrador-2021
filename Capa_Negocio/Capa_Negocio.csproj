@@ -50,6 +50,7 @@
     <Compile Include="ProveedorNegocio.cs" />
     <Compile Include="RolNegocio.cs" />
     <Compile Include="UsuarioNegocio.cs" />
+    <Compile Include="VentaNegocio.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CapaDato\Capa_Datos.csproj">

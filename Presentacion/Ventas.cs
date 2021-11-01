@@ -23,37 +23,36 @@ namespace Presentacion
           
 
         }
-
-      
-
-        string usuID="";
-
-
+        Usuario usu_idLocal = new Usuario();
+        int legajo = 0;
+        int local = 0;
+        DataTable dt2 = new DataTable();
+        VentaNegocio vn = new VentaNegocio();
         private void Ventas_Load(object sender, EventArgs e)
         {
-
+            legajo = Convert.ToInt32( lblLegajo.Text);
+            dt2 = vn.ConsultaLocalUsuario(usu_legajo);
+           // if ()
         }
 
         void autocompletar()
         {
-            //AutoCompleteStringCollection lista = new AutoCompleteStringCollection();
-            //var ds = new DataSet();
-            //DataTable dt = new DataTable();
-            //ProductoNegocio item = new ProductoNegocio();
-            //dt = item.ConsultarProducto();
-            //for (int i = 0; i < dt.Rows.Count; i++)
-            //{
-            //    lista.Add(dt.Rows[i]["prod_CodDeProd"].ToString());
-            //}
-            //txtCodProd.AutoCompleteCustomSource = lista;
+            AutoCompleteStringCollection lista = new AutoCompleteStringCollection();
+            usu_idLocal = local.;
+            DataTable dt = new DataTable();
+            VentaNegocio item = new VentaNegocio();
+            dt = item.VentaConsultarStock(usu_idLocal);
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                lista.Add(dt.Rows[i][""].ToString());
+            }
+            txtCodProd.AutoCompleteCustomSource = lista;
         }
 
         private void btn_CerrarUsuAlta_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
-       
 
         public void dgvVentas_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -66,6 +65,16 @@ namespace Presentacion
         private void btn_CerrarUsuAlta_Click_1(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtCodProd_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

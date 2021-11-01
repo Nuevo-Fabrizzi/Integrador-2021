@@ -19,5 +19,6 @@ namespace Capa_Entidad
         public String Estado { get; set; }
         public int Contrasenia { get; set; }
         public String Area { get; set; }
+        public int usu_idLocal { get; set; }
     }
 }
