@@ -40,6 +40,14 @@ C:\Users\Usuario\Source\Repos\Nuevo-Fabrizzi\Integrador-2021\CapaDato\obj\Debug\
 C:\Users\Usuario\Source\Repos\Nuevo-Fabrizzi\Integrador-2021\CapaDato\obj\Debug\Capa_Datos.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\Source\Repos\Nuevo-Fabrizzi\Integrador-2021\CapaDato\bin\Debug\Capa_Dato.dll
 C:\Users\Usuario\Source\Repos\Nuevo-Fabrizzi\Integrador-2021\CapaDato\bin\Debug\Capa_Dato.pdb
-C:\Users\Usuario\Source\Repos\Nuevo-Fabrizzi\Integrador-2021\CapaDato\obj\Debug\Capa_Datos.csproj.CopyComplete
 C:\Users\Usuario\Source\Repos\Nuevo-Fabrizzi\Integrador-2021\CapaDato\obj\Debug\Capa_Dato.dll
 C:\Users\Usuario\Source\Repos\Nuevo-Fabrizzi\Integrador-2021\CapaDato\obj\Debug\Capa_Dato.pdb
+C:\Users\BIENVENIDO\OneDrive\Escritorio\Integrador-2021\CapaDato\bin\Debug\Capa_Dato.dll
+C:\Users\BIENVENIDO\OneDrive\Escritorio\Integrador-2021\CapaDato\bin\Debug\Capa_Dato.pdb
+C:\Users\BIENVENIDO\OneDrive\Escritorio\Integrador-2021\CapaDato\bin\Debug\Capa_Entidad.dll
+C:\Users\BIENVENIDO\OneDrive\Escritorio\Integrador-2021\CapaDato\bin\Debug\Capa_Entidad.pdb
+C:\Users\BIENVENIDO\OneDrive\Escritorio\Integrador-2021\CapaDato\obj\Debug\Capa_Datos.csproj.AssemblyReference.cache
+C:\Users\BIENVENIDO\OneDrive\Escritorio\Integrador-2021\CapaDato\obj\Debug\Capa_Datos.csproj.CoreCompileInputs.cache
+C:\Users\BIENVENIDO\OneDrive\Escritorio\Integrador-2021\CapaDato\obj\Debug\Capa_Dato.dll
+C:\Users\BIENVENIDO\OneDrive\Escritorio\Integrador-2021\CapaDato\obj\Debug\Capa_Dato.pdb
+C:\Users\BIENVENIDO\OneDrive\Escritorio\Integrador-2021\CapaDato\obj\Debug\Capa_Datos.csproj.CopyComplete

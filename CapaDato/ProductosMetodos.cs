@@ -36,10 +36,7 @@ namespace Capa_Datos
             }
         }
 
-        public DataTable ConsultarProductoTipo(Producto prod_Tipo)
-        {
-            throw new NotImplementedException();
-        }
+       
 
         public DataTable ConsultarProdXTipo(Producto prod_Tipo)
         {

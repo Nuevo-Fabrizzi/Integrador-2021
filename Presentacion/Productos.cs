@@ -310,10 +310,10 @@ namespace Presentacion
             var productosNegocio = new ProductoNegocio();
             var prodEnt = new Productos();
 
-            String tipoProducto = "";
-            String subTipo = "";
-            String codProducto = "";
-            String temporada = "";
+            //String tipoProducto = "";
+            //String subTipo = "";
+            //String codProducto = "";
+            //String temporada = "";
             object yourDateTime = null;
             String anio = yourDateTime.ToString().Substring(2);//DateTime.Now.ToString("yy");
 
@@ -330,14 +330,14 @@ namespace Presentacion
                     MessageBox.Show("Debe Seleccionar un talle para el producto!", "Seleccione Talle");
                 }
             }
-            if (cBox_Temporada.SelectedItem.ToString() == "Primavera-Verano")
-            {
-                temporada = "V";
-            }
-            else
-            {
-                temporada = "I";
-            }
+            //if (cBox_Temporada.SelectedItem.ToString() == "Primavera-Verano")
+            //{
+            //    temporada = "V";
+            //}
+            //else
+            //{
+            //    temporada = "I";
+            //}
 
 
 

@@ -30,6 +30,7 @@ namespace Presentacion
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblLegajo = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.lblUsuarios_Venta = new System.Windows.Forms.Label();
             this.lbl_TitVentas = new System.Windows.Forms.Label();
@@ -55,7 +56,6 @@ namespace Presentacion
             this.label9 = new System.Windows.Forms.Label();
             this.btn_ImprimirVentas = new System.Windows.Forms.Button();
             this.Btn_GuardarVentaProductos = new System.Windows.Forms.Button();
-            this.lblLegajo = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVentas)).BeginInit();
             this.SuspendLayout();
@@ -74,6 +74,17 @@ namespace Presentacion
             this.panel1.Size = new System.Drawing.Size(956, 86);
             this.panel1.TabIndex = 72;
             // 
+            // lblLegajo
+            // 
+            this.lblLegajo.AutoSize = true;
+            this.lblLegajo.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLegajo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblLegajo.Location = new System.Drawing.Point(629, 26);
+            this.lblLegajo.Name = "lblLegajo";
+            this.lblLegajo.Size = new System.Drawing.Size(53, 17);
+            this.lblLegajo.TabIndex = 104;
+            this.lblLegajo.Text = "Legajo";
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -84,6 +95,7 @@ namespace Presentacion
             this.label10.Size = new System.Drawing.Size(43, 17);
             this.label10.TabIndex = 103;
             this.label10.Text = "Local";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // lblUsuarios_Venta
             // 
@@ -141,6 +153,7 @@ namespace Presentacion
             this.txtCodProd.Name = "txtCodProd";
             this.txtCodProd.Size = new System.Drawing.Size(166, 20);
             this.txtCodProd.TabIndex = 83;
+            this.txtCodProd.TextChanged += new System.EventHandler(this.txtCodProd_TextChanged);
             // 
             // textBox2
             // 
@@ -216,9 +229,9 @@ namespace Presentacion
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(57, 341);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 17);
+            this.label2.Size = new System.Drawing.Size(95, 17);
             this.label2.TabIndex = 93;
-            this.label2.Text = "Codigo Articulo";
+            this.label2.Text = "Tipo Articulo";
             // 
             // label3
             // 
@@ -320,17 +333,6 @@ namespace Presentacion
             this.Btn_GuardarVentaProductos.TabIndex = 102;
             this.Btn_GuardarVentaProductos.Text = "Guardar";
             this.Btn_GuardarVentaProductos.UseVisualStyleBackColor = false;
-            // 
-            // lblLegajo
-            // 
-            this.lblLegajo.AutoSize = true;
-            this.lblLegajo.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLegajo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblLegajo.Location = new System.Drawing.Point(629, 26);
-            this.lblLegajo.Name = "lblLegajo";
-            this.lblLegajo.Size = new System.Drawing.Size(53, 17);
-            this.lblLegajo.TabIndex = 104;
-            this.lblLegajo.Text = "Legajo";
             // 
             // Ventas
             // 
